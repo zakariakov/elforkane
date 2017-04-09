@@ -18,7 +18,7 @@
      void setPixmapAya(QPixmap pix);//تحديد الاية
      void setInfo(QString sura,QString  jozaa,QString hizb,QString rbaa,QString aya,QString reciter,QString trans);
      void setAnimationEnabled(bool enable);
-     void execOptions();
+
      void setGraphicSceen(QGraphicsView *view);
    void loadSetting();
  private slots:

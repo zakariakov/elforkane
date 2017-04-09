@@ -29,6 +29,10 @@
 #include <QApplication>
 #include "mainwindow.h"
 #include "database.h"
+#include <QSettings>
+#include <QTranslator>
+#include <QLibraryInfo>
+
 
 static void associateFileTypes()
 {

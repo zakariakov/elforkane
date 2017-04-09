@@ -28,11 +28,12 @@
 ****************************************************************************/
 #ifndef DIALOGOPTION_H
 #define DIALOGOPTION_H
-#include "fullinterface.h"
+
 #include <QDialog>
 #include <QWidget>
 #include <QLineEdit>
 #include <QAbstractButton>
+#include <QKeyEvent>
 class  LineEdit : public QLineEdit
 {
     Q_OBJECT
@@ -99,7 +100,7 @@ public:
 
     bool restoreDefaults;
 
-    QList<SceenFullInterface *>listSceen;
+
     QStringList listShortcuts;
 
 public slots:
@@ -216,7 +217,7 @@ private slots:
 
 private:
     Ui::DialogOption *ui;
-    SceenFullInterface *sceenFullInterface;
+
     LineEdit *lineEdit;
     QString appPath;
     QColor selectColor;

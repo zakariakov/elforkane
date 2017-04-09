@@ -36,7 +36,12 @@
 #include "dialogoption.h"
 #include "dialogabout.h"
 #include "dialogscript.h"
-//#include <QtWinExtras>
+#include <QTimer>
+#include <QSettings>
+#include <QTextCodec>
+
+#include <math.h>       /* fmod */
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),mSceenFull(0)

@@ -81,7 +81,6 @@ win32 {
     dialogaddreciter.h \
     dialogoption.h \
     dialogabout.h\
-    fullinterface.h \
     sceenbase.h \
     dialogscript.h
      message("qt vertion is :4 " $$QT_MAJOR_VERSION)
@@ -108,7 +107,6 @@ win32 {
     dialogaddreciter.h \
     dialogoption.h \
     dialogabout.h\
-    fullinterface.h \
     sceenbase.h \
     dialogscript.h
 
@@ -121,12 +119,10 @@ FORMS    += mainwindow.ui \
     dialogaddreciter.ui \
     dialogoption.ui \
     dialogabout.ui \
-    dialogscript.ui \
-    fs-wallpapers/dialogfullsceen.ui
+    dialogscript.ui
 
 RESOURCES += \
-    img.qrc \
-    fs-wallpapers/image.qrc
+    img.qrc
 
 
 TRANSLATIONS    =usr/share/elforkane/language/elforkane_ar.ts\
@@ -174,34 +170,11 @@ MKDIR = mkdir -p /usr/share/elforkane
 
 HEADERS += \
     fs-wallpapers/fullscreen.h \
-    fs-wallpapers/dialogfullsceen.h \
-    build/moc_predefs.h \
-    build/ui_dialogabout.h \
-    build/ui_dialogaddreciter.h \
-    build/ui_dialogfullsceen.h \
-    build/ui_dialogoption.h \
-    build/ui_dialogscript.h \
-    build/ui_mainwindow.h \
-    baseseen.h \
-    network.h
+
 
 SOURCES += \
     fs-wallpapers/fullscreen.cpp \
-    fs-wallpapers/dialogfullsceen.cpp \
-    build/moc_database.cpp \
-    build/moc_dialogabout.cpp \
-    build/moc_dialogaddreciter.cpp \
-    build/moc_dialogfullsceen.cpp \
-    build/moc_dialogoption.cpp \
-    build/moc_dialogscript.cpp \
-    build/moc_fullscreen.cpp \
-    build/moc_mainwindow.cpp \
-    build/moc_playermultimedia.cpp \
-    build/moc_sceenbase.cpp \
-    baseseen.cpp \
-    network.cpp \
-    qrc_image.cpp \
-    qrc_img.cpp
+
 
 DISTFILES += \
     usr/share/elforkane/fullscreen/bgrFull.png \

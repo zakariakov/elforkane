@@ -28,7 +28,7 @@
 ****************************************************************************/
 #include "dialogoption.h"
 #include "ui_dialogoption.h"
-#include "fs-wallpapers/dialogfullsceen.h"
+
 #include <QFile>
 #include <QDir>
 #include <QTextStream>
@@ -39,6 +39,7 @@
 #include <QFileDialog>
 #include <QDesktopServices>
 #include <QTreeWidgetItem>
+#include <QTextCodec>
 DialogOption::DialogOption(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DialogOption)

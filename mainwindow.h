@@ -47,7 +47,7 @@
 #include "player.h"
 #endif
 
-#include "fullinterface.h"
+
 QT_FORWARD_DECLARE_CLASS(QLabel)
 QT_FORWARD_DECLARE_CLASS(QSlider)
 QT_FORWARD_DECLARE_CLASS(QAbstractButton)
@@ -75,7 +75,7 @@ PlayerMultimedia *mPlayer;
 #else
 Player *mPlayer;
 #endif
-    SceenFullInterface *sceenFullInterface;
+
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
