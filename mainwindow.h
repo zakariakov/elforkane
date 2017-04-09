@@ -343,12 +343,14 @@ QTimer *timerScreen;
 
 SceenFull *mSceenFull;
 
+/*
 QWinTaskbarButton* taskbarButton;
 QWinTaskbarProgress* taskbarProgress;
 QWinThumbnailToolBar* thumbnailToolBar;
 QWinThumbnailToolButton *playToolButton;
 QWinThumbnailToolButton *forwardToolButton;
 QWinThumbnailToolButton *backwardToolButton;
+*/
 
 };
 
