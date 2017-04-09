@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogAbout</class>
+ <widget class="QDialog" name="DialogAbout">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>&amp;About</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/img/elforkane.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Elforkane&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The electronic Holly Quran browser&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Author : Abou Zakaria&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;License : Gpl 3&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Url :&lt;a href=&quot;https://sourceforge.net/projects/elforkane/&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://sourceforge.net/projects/elforkane/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Mail :&lt;a href=&quot;www.yahiaui@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;www.yahiaui@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelvertion">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>v:1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>&amp;Thinks</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTextEdit" name="textEdit_2">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p dir='rtl' style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;أتقدم بجزيل الشكر لاعضاء موقع القرءان الكريم بجامعة الملك سعود&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://quran.ksu.edu.su/&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman, serif'; text-decoration: underline; color:#0057ae;&quot;&gt;http://quran.ksu.edu.su&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Microsoft Sans Serif';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif'; font-size:12pt;&quot;&gt;و أعضاء مجتمع لينكس العربي   &lt;/span&gt;&lt;a href=&quot;www.linuxac.org&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif'; text-decoration: underline; color:#0057ae;&quot;&gt;www.linuxac.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;واخص بالذكر منهم محمد شعبان على تعاونه الكبير &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;و البكري على الايقونة الجميلة للبرنامج&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Microsoft Sans Serif';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif'; font-size:12pt;&quot;&gt;وأعضاء مجتمع كيوتي العربي  &lt;/span&gt;&lt;a href=&quot;www.qt-ar.org&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif'; text-decoration: underline; color:#0057ae;&quot;&gt;www.qt-ar.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Microsoft Sans Serif';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;وكل من ساهم او شارك او ابدى رئيا او نقدا  لاخراج هذا البرنامج&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>&amp;Help</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif'; font-size:11pt; font-weight:600;&quot;&gt;كيفية الحصول على ملفات القرءان الكريم باصوات المقرئين&lt;/span&gt;&lt;span style=&quot; font-family:'Arial, sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman, serif'; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman, serif';&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;اذا كان لك اتصال بالانترنيت ذو سرعة مناسبة فيمكنك الاستماع مباشرة الى المقرئ الذي تختاره كما يمكنك تغيير موقع القراءة اذا كان لك موقع تعرفه يعتمد على الصيغة التي يعمل بها البرنامج وهي ملف صوت لكل اية &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman, serif'; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman, serif';&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;كما يمكنك تحميل ملفات الاصوات من موقع القرءان الكريم بجامعة الملك سعود&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://quran.ksu.edu.sa/ayat/?l=ar&amp;amp;pg=patches&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif'; text-decoration: underline; color:#0057ae;&quot;&gt;http://quran.ksu.edu.sa/ayat/?l=ar&amp;amp;pg=patches&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;ستحصل على ملفات من نوع زيب ذات امتداد &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman, serif';&quot;&gt;&amp;quot;.ayt&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;غير الامتداد الى &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman, serif';&quot;&gt;&amp;quot;zip&amp;quot; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;ثم ازل الضغط عن الملف ستجد بداخل المجلد المتحصل عليه مجلدا باسم المقرئ و ونوعية الضغط بداخله ملفات الصوت ضعه اين تشاء على جهازك او في قرص مضغوط او في فلاش &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;ثم في تحرير المقرئ في مسار المجلد اشر الى المجلد الذي يحتوي الاصوات&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;ملاحظة&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman, serif';&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;يمكن ان يحتوي الملف الذي تحصلت عليه بعد ازالة الضغط على مجلدين احدهما فارغ قم بحذفه&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;كلما حملت ملفا جديدا لنفس المقرئ اضف ملفاته الى المجلد السابق الذي يحتوي ملفات المقرئ الصوتية&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif'; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;- كما يمكنك الحصول على حزم بصيغة توزيعتك من هنا&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;حزم rpm  :  &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/rpm/ayat/download/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1a5f9f;&quot;&gt;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/rpm/ayat/download/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;حزم deb :&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/deb/ayat/download/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1a5f9f;&quot;&gt;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/deb/ayat/download/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;ملاحظة : اذا لم تجد المقرئ ضمن قائمة المقرئين يمكنك اضافته يدويا &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;مثلا &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;اسم المقرئ  : الحذيفي&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Sans Serif';&quot;&gt;مسار الملف : audio/Hudhaify_32kbps&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Microsoft Sans Serif';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Microsoft Sans Serif';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir='rtl' style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Microsoft Sans Serif';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::TextBrowserInteraction</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogAbout</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

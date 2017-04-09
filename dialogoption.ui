@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogOption</class>
+ <widget class="QDialog" name="DialogOption">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>generales</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QCheckBox" name="checkBoxReciteBasmala">
+             <property name="text">
+              <string>Recite Basmala</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="labelLanguage">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Language</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxLanguage">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Numbers</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxNumber"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QCheckBox" name="checkBoxSystry">
+               <property name="text">
+                <string>Minimize to systry</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Infobull duration</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBoxsystry">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="suffix">
+                <string>s</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxFullType">
+             <property name="text">
+              <string>Animated Fullscreen</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLineEdit" name="lineEditFileBgr"/>
+              </item>
+              <item>
+               <widget class="QToolButton" name="toolButtonFullOption">
+                <property name="text">
+                 <string>...</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="img.qrc">
+                  <normaloff>:/img/system-run.png</normaloff>:/img/system-run.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>look</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QCheckBox" name="checkBoxAnimEfect">
+             <property name="text">
+              <string>Animation Efect</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxShowMenu">
+             <property name="text">
+              <string>Show Menu</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxFitInView">
+             <property name="text">
+              <string>Fit in view ( restart aplication)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBoxStandardTool">
+               <property name="text">
+                <string>Show standard toolbaar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="checkBoxtool">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Text and icons in toolbar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="checkBoxMediaControl">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Media Controle in Tool Bar</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QCheckBox" name="checkBoxShowSelection">
+               <property name="text">
+                <string>Show Selection</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Selection Color</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonColor">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>30</width>
+                 <height>16</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="labelTheme">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Theme</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxTheme">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Keyboard</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QTreeWidget" name="treeWidget">
+             <property name="rootIsDecorated">
+              <bool>false</bool>
+             </property>
+             <attribute name="headerDefaultSectionSize">
+              <number>200</number>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Action Name</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Shortcute</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string notr="true">resit</string>
+              </property>
+             </column>
+             <item>
+              <property name="text">
+               <string>Settings</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/document-properties.png</normaloff>:/img/document-properties.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+L</string>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+L</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Navigation</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/media-repeat.png</normaloff>:/img/media-repeat.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+F</string>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+F</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Repeat Options</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/media-repeat.png</normaloff>:/img/media-repeat.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+R</string>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+R</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Audio Effect</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/media-effect.png</normaloff>:/img/media-effect.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+E</string>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+E</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Translation</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/tefsir.png</normaloff>:/img/tefsir.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+T</string>
+              </property>
+              <property name="text">
+               <string notr="true">Ctrl+T</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Next Page</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/page-next.png</normaloff>:/img/page-next.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+PgDown</string>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+PgDown</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Previows Page</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/page-prev.png</normaloff>:/img/page-prev.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+PgUp</string>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+PgUp</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Next Sura</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/go-first.png</normaloff>:/img/go-first.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Down</string>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Down</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Previows Sura</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/go-last.png</normaloff>:/img/go-last.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Up</string>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Up</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>NexT Aya</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/arrow-left.png</normaloff>:/img/arrow-left.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Left</string>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Left</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Previows Aya</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/arrow-right.png</normaloff>:/img/arrow-right.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Right</string>
+              </property>
+              <property name="text">
+               <string notr="true">Alt+Right</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Memorizing</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/edite.png</normaloff>:/img/edite.png</iconset>
+              </property>
+              <property name="text">
+               <string>Alt+M</string>
+              </property>
+              <property name="text">
+               <string>Alt+M</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Play Pause</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/media-playback-pause.png</normaloff>:/img/media-playback-pause.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">Space</string>
+              </property>
+              <property name="text">
+               <string notr="true">Space</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Media Stop</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/media-playback-stop.png</normaloff>:/img/media-playback-stop.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">S</string>
+              </property>
+              <property name="text">
+               <string notr="true">S</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Full Screen</string>
+              </property>
+              <property name="icon">
+               <iconset resource="img.qrc">
+                <normaloff>:/img/view-fullscreen.png</normaloff>:/img/view-fullscreen.png</iconset>
+              </property>
+              <property name="text">
+               <string notr="true">F11</string>
+              </property>
+              <property name="text">
+               <string notr="true">F11</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QDialogButtonBox" name="buttonBoxKey">
+               <property name="standardButtons">
+                <set>QDialogButtonBox::Apply|QDialogButtonBox::Reset</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QRadioButton" name="radioButtonRepeatAll">
+         <property name="text">
+          <string>Repeat All</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonRepeatPage">
+         <property name="text">
+          <string>Repeat page</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonRepeatOne">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Repeat curent ayat</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonRepeatSura">
+         <property name="text">
+          <string>Repeat Sura</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QCheckBox" name="checkBoxNumRepeat">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Repeat Number</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBoxNumRepeat">
+           <property name="minimum">
+            <number>2</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButtonFromTo">
+           <property name="text">
+            <string>Repeat From</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBoxFrom">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>7</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>To</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBoxTo">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>7</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>90</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok|QDialogButtonBox::RestoreDefaults</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogOption</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogOption</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxSystry</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBoxsystry</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButtonFromTo</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>checkBoxNumRepeat</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>58</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxStandardTool</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>checkBoxtool</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxStandardTool</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>checkBoxMediaControl</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxFullType</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>165</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

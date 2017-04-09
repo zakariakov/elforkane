@@ -1,0 +1,24 @@
+[Desktop Entry]
+Categories=X-Islamic-Software;GTK;Qt;Office;Viewer;
+Comment[en_US]=The electronic Holly Quran browser Elforkane
+Comment=The electronic Holly Quran browser Elforkane
+Comment[ar]=طالع استمع تصفح القرءان الكريم بالتراجم والتفاسير
+Exec=elforkane
+GenericName[en_US]=The electronic Holly Quran browser Elforkane
+GenericName=The electronic Holly Quran browser Elforkane
+GenericName[ar]=المصحف الالكتروني الفرقان
+Icon=elforkane
+MimeType=
+Name[en_US]=elforkane
+Name=elforkane
+Name[ar]=الفرقان
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.2.3
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

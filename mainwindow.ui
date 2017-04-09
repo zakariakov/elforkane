@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>El Forkane</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolBar , QMenuBar{
+                        background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 100), stop:0.431694 rgba(231, 231, 231, 100), stop:0.469945 rgba(183, 183, 183, 100), stop:1 rgba(255, 255, 255, 100));
+                          spacing: 3px;
+border-width: 0px;
+                         }
+QMenuBar::item {
+color: black;
+     spacing: 3px; 
+     padding: 1px 4px;
+     background: transparent;
+     border-radius: 3px;
+ }
+
+ QMenuBar::item:selected { 
+     background: #a8a8a8;
+ }
+
+ QMenuBar::item:pressed {
+     background: #888888;
+ }
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="sceneRect">
+       <rectf>
+        <x>0.000000000000000</x>
+        <y>0.000000000000000</y>
+        <width>912.000000000000000</width>
+        <height>672.000000000000000</height>
+       </rectf>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>703</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNavigation"/>
+    <addaction name="actionRepeatOption"/>
+    <addaction name="actionOptions"/>
+    <addaction name="actionScriptDownload"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionNextPage"/>
+    <addaction name="actionPrevPage"/>
+    <addaction name="separator"/>
+    <addaction name="actionNextSura"/>
+    <addaction name="actionPrevSura"/>
+    <addaction name="separator"/>
+    <addaction name="actionNextAya"/>
+    <addaction name="actionPrevAya"/>
+    <addaction name="separator"/>
+    <addaction name="actionPlayPause"/>
+    <addaction name="actionStopMedia"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuTextZoom">
+     <property name="title">
+      <string>Text Zoom</string>
+     </property>
+     <addaction name="actionZoomIn"/>
+     <addaction name="actionZoomOut"/>
+    </widget>
+    <widget class="QMenu" name="menuTransTefsir">
+     <property name="title">
+      <string>Translation and Tefsir</string>
+     </property>
+     <widget class="QMenu" name="menuTefsir">
+      <property name="title">
+       <string>Tefsir</string>
+      </property>
+     </widget>
+     <widget class="QMenu" name="menuTranslation">
+      <property name="title">
+       <string>Translation</string>
+      </property>
+     </widget>
+     <addaction name="menuTefsir"/>
+     <addaction name="menuTranslation"/>
+     <addaction name="actionQuranText"/>
+    </widget>
+    <addaction name="actionFullScreen"/>
+    <addaction name="separator"/>
+    <addaction name="menuTextZoom"/>
+    <addaction name="menuTransTefsir"/>
+    <addaction name="separator"/>
+    <addaction name="actionMemoriz"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_edit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="windowTitle">
+    <string>Navigation and Find</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <property name="leftMargin">
+      <number>1</number>
+     </property>
+     <property name="topMargin">
+      <number>1</number>
+     </property>
+     <property name="rightMargin">
+      <number>1</number>
+     </property>
+     <property name="bottomMargin">
+      <number>1</number>
+     </property>
+     <item>
+      <widget class="QToolBox" name="toolBox">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="pageFind">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>441</width>
+          <height>343</height>
+         </rect>
+        </property>
+        <attribute name="icon">
+         <iconset resource="img.qrc">
+          <normaloff>:/img/findA.png</normaloff>:/img/findA.png</iconset>
+        </attribute>
+        <attribute name="label">
+         <string>Find</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="leftMargin">
+             <number>2</number>
+            </property>
+            <property name="topMargin">
+             <number>4</number>
+            </property>
+            <property name="rightMargin">
+             <number>2</number>
+            </property>
+            <property name="bottomMargin">
+             <number>2</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLineEdit" name="lineEditSearch"/>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_3" native="true">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <property name="leftMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>4</number>
+                 </property>
+                 <item>
+                  <widget class="QCheckBox" name="checkBoxAnd">
+                   <property name="text">
+                    <string>And</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="checkBoxOr">
+                   <property name="text">
+                    <string>Or</string>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditSearchAnd"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="toolButtonGoSearch">
+                <property name="text">
+                 <string>...</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="img.qrc">
+                  <normaloff>:/img/findA.png</normaloff>:/img/findA.png</iconset>
+                </property>
+                <property name="arrowType">
+                 <enum>Qt::NoArrow</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_4" native="true">
+              <layout class="QGridLayout" name="gridLayout">
+               <property name="leftMargin">
+                <number>1</number>
+               </property>
+               <property name="topMargin">
+                <number>1</number>
+               </property>
+               <property name="rightMargin">
+                <number>1</number>
+               </property>
+               <property name="bottomMargin">
+                <number>1</number>
+               </property>
+               <item row="1" column="0">
+                <widget class="QRadioButton" name="radioButtonAdvensed">
+                 <property name="text">
+                  <string>Multi Search</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QRadioButton" name="radioButtonSearchLast">
+                 <property name="text">
+                  <string>End Aya</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QRadioButton" name="radioButtonSearch">
+                 <property name="text">
+                  <string>Text all</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QRadioButton" name="radioButtonSearchFirst">
+                 <property name="text">
+                  <string>Begin Aya</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="treeWidgetSearch">
+              <attribute name="headerVisible">
+               <bool>false</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Sura</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Aya</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Aya text</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>id</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageNavig">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>276</width>
+          <height>343</height>
+         </rect>
+        </property>
+        <attribute name="icon">
+         <iconset resource="img.qrc">
+          <normaloff>:/img/list.png</normaloff>:/img/list.png</iconset>
+        </attribute>
+        <attribute name="label">
+         <string>Navigation</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QComboBox" name="comboBoxSoraJozaa">
+              <item>
+               <property name="text">
+                <string>Sura</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Ajzaa And Arbaa</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLineEdit" name="lineEditSearchTree"/>
+              </item>
+              <item>
+               <widget class="QToolButton" name="toolButtonExpand">
+                <property name="text">
+                 <string>...</string>
+                </property>
+                <property name="arrowType">
+                 <enum>Qt::DownArrow</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="toolButtonColaps">
+                <property name="text">
+                 <string>...</string>
+                </property>
+                <property name="arrowType">
+                 <enum>Qt::UpArrow</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxHamza">
+              <property name="text">
+               <string>Ignore hamza</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="treeWidgetIndex">
+              <attribute name="headerVisible">
+               <bool>false</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>text</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>pos</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>tool Bar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>22</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionNextPage">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/page-next.png</normaloff>:/img/page-next.png</iconset>
+   </property>
+   <property name="text">
+    <string>NextPage</string>
+   </property>
+   <property name="toolTip">
+    <string>NextPage Alt+PgDown</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+PgDown</string>
+   </property>
+  </action>
+  <action name="actionPrevPage">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/page-prev.png</normaloff>:/img/page-prev.png</iconset>
+   </property>
+   <property name="text">
+    <string>Previous Page</string>
+   </property>
+   <property name="toolTip">
+    <string>Previous Page Alt+PgUp</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+PgUp</string>
+   </property>
+  </action>
+  <action name="actionNextSura">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/go-first.png</normaloff>:/img/go-first.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next Sura</string>
+   </property>
+   <property name="toolTip">
+    <string>Next Sura Alt+Down</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Down</string>
+   </property>
+  </action>
+  <action name="actionPrevSura">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/go-last.png</normaloff>:/img/go-last.png</iconset>
+   </property>
+   <property name="text">
+    <string>Previous Sura</string>
+   </property>
+   <property name="toolTip">
+    <string>Previous Sura Alt+Up</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Up</string>
+   </property>
+  </action>
+  <action name="actionNextAya">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/arrow-left.png</normaloff>:/img/arrow-left.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next Aya</string>
+   </property>
+   <property name="toolTip">
+    <string>Next Aya Alt+Left</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Left</string>
+   </property>
+  </action>
+  <action name="actionPrevAya">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/arrow-right.png</normaloff>:/img/arrow-right.png</iconset>
+   </property>
+   <property name="text">
+    <string>Previous Aya</string>
+   </property>
+   <property name="toolTip">
+    <string>Previous Aya  Alt+Right</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Right</string>
+   </property>
+  </action>
+  <action name="actionOptions">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/document-properties.png</normaloff>:/img/document-properties.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="toolTip">
+    <string>Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionFullScreen">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/view-fullscreen.png</normaloff>:/img/view-fullscreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Full Screen</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionPlayPause">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/media-playback-start.png</normaloff>:/img/media-playback-start.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play Pause</string>
+   </property>
+   <property name="toolTip">
+    <string>Play Pause Espace</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionStopMedia">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/media-playback-stop.png</normaloff>:/img/media-playback-stop.png</iconset>
+   </property>
+   <property name="text">
+    <string> Media Stop</string>
+   </property>
+   <property name="toolTip">
+    <string>Media Stop S</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/zoom-out.png</normaloff>:/img/zoom-out.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom Out</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Out Ctrl+-</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/zoom-in.png</normaloff>:/img/zoom-in.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom In</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom In Ctrl++</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="actionNavigation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/list.png</normaloff>:/img/list.png</iconset>
+   </property>
+   <property name="text">
+    <string>Navigation</string>
+   </property>
+   <property name="toolTip">
+    <string>Navigation Ctrl+F</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionRepeatOption">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/media-repeat.png</normaloff>:/img/media-repeat.png</iconset>
+   </property>
+   <property name="text">
+    <string>Repeat Options</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionAddReceter">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/list-add.png</normaloff>:/img/list-add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Receter</string>
+   </property>
+   <property name="toolTip">
+    <string>Add Receter</string>
+   </property>
+  </action>
+  <action name="actionRemoveReceter">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/list-remove.png</normaloff>:/img/list-remove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Receter</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Receter</string>
+   </property>
+  </action>
+  <action name="actionEditeReceter">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/gtk-edit.png</normaloff>:/img/gtk-edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit curent Receter</string>
+   </property>
+   <property name="toolTip">
+    <string>Edite Curent Receter</string>
+   </property>
+  </action>
+  <action name="actionRceterEdite">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/gtk-edit.png</normaloff>:/img/gtk-edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rceter Edit</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit receters</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionQuranText">
+   <property name="text">
+    <string>Quran text</string>
+   </property>
+  </action>
+  <action name="actionEnableAnimFull">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable Animation</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+N</string>
+   </property>
+  </action>
+  <action name="actionMemoriz">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/edite.png</normaloff>:/img/edite.png</iconset>
+   </property>
+   <property name="text">
+    <string>Memorizing</string>
+   </property>
+   <property name="toolTip">
+    <string>Memorizing</string>
+   </property>
+  </action>
+  <action name="actionScriptDownload">
+   <property name="text">
+    <string>Generate Download Script</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>toolButtonExpand</sender>
+   <signal>clicked()</signal>
+   <receiver>treeWidgetIndex</receiver>
+   <slot>expandAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>669</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButtonColaps</sender>
+   <signal>clicked()</signal>
+   <receiver>treeWidgetIndex</receiver>
+   <slot>collapseAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButtonAdvensed</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widget_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>667</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
