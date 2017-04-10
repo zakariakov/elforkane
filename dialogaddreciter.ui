@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>482</width>
-    <height>298</height>
+    <width>495</width>
+    <height>336</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -102,6 +102,18 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(236, 255, 167);
+border:1px;
+border-radius::5 px;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;ملاحظة&lt;/span&gt;: &lt;span style=&quot; color:#0c0c0c;&quot;&gt;يستحسن ان بكون اسم القارئ مثل اسمه في عنوان الموقع مثلا &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; color:#0c0c0c;&quot;&gt;  &amp;quot;Muhammad_Ayyoub_128kbps &amp;quot; &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; color:#0c0c0c;&quot;&gt;حتى يمكن للبرنامج ايجاده في حالة ما نزلت حزم التثبيت&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>

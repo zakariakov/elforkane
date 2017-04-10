@@ -40,49 +40,49 @@ class Database : public QObject
     Q_OBJECT
 public:
     Database();
-QSqlDatabase db;
-QList<int>*myListSura;
-QList<QString>*myList;
-//QList<QString>*myListJozaa;
-QList<QString>*myListSafhat;
-QList<int>*myListJozaa;
-QList<int>*myListHizb;
-QList<QString>*myListArbaa;
- QList<QAction *>myListAction;
-QString appPath;
+    QSqlDatabase db;
+    QList<int>*myListSura;
+    QList<QString>*myList;
+    //QList<QString>*myListJozaa;
+    QList<QString>*myListSafhat;
+    QList<int>*myListJozaa;
+    QList<int>*myListHizb;
+    QList<QString>*myListArbaa;
+    QList<QAction *>myListAction;
+    QString appPath;
 
-int curentId;
- int curentSura;
-  int curentSafha;
-  int curentAya;
-  int curentJozaa;
-   int curentHizb;
-   int curentRobaa;
-   QString curentSound;
-   QString m_soundPath;
+    int curentId;
+    int curentSura;
+    int curentSafha;
+    int curentAya;
+    int curentJozaa;
+    int curentHizb;
+    int curentRobaa;
+    QString curentSound;
+    QString m_soundPath;
 signals:
 
 
 public slots:
 
-void searchInCuran(QString searchString );
+    void searchInCuran(QString searchString );
     void treeChargeJozaa(QTreeWidget *view);
     void treeChargeSoura(QTreeWidget *view,   bool suraCharged,QComboBox *combo,QString lng,int id);
     void  chargeCsvs(QString riwaya);
     void openDb(QString dataFileName);
     void dataSearchString(QTreeWidget *view,QString arg1,QString arg2,QString orAnd ,int option);
-        QString getStringPage(int begen,int end);
-   //void chargeTree(QTreeWidget *view);
-void searchInTreeview(QTreeWidget *view, QString searchString, int colum, bool hamza);
+    QString getStringPage(int begen,int end);
+    //void chargeTree(QTreeWidget *view);
+    void searchInTreeview(QTreeWidget *view, QString searchString, int colum, bool hamza);
     QString getTranslation(int pos);
 private:
-QString tableName;
-QString databaseName;
+    QString tableName;
+    QString databaseName;
 private slots:
-  QString creatIndex(QString mytxt);
-  bool searchTreeForString( const QString &searchString, QTreeWidgetItem* parent,
-                            bool itemtop,int  topindex,QTreeWidget *view,int colum, bool hamza) ;
-  bool showAllItems( QTreeWidgetItem* parent,QTreeWidget *view ) ;
+    QString creatIndex(QString mytxt);
+    bool searchTreeForString( const QString &searchString, QTreeWidgetItem* parent,
+                              bool itemtop,int  topindex,QTreeWidget *view,int colum, bool hamza) ;
+    bool showAllItems( QTreeWidgetItem* parent,QTreeWidget *view ) ;
 };
 
 #endif // DATABASE_H

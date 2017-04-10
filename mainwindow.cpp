@@ -39,7 +39,7 @@
 #include <QTimer>
 #include <QSettings>
 #include <QTextCodec>
-
+#include <QDirIterator>
 #include <math.h>       /* fmod */
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -2023,9 +2023,37 @@ void MainWindow::on_actionEnableAnimFull_toggled(bool arg1)
 bool MainWindow::mediaPlayAyat(QString dirPath)
 {
     QDir dir(dirPath);
-    //   qDebug()<<"Ayat file path :"+dirPath;
+//      qDebug()<<"Ayat file path===================== :"+dirPath;
+//      qDebug()<<"m_soundPath===================== :"+m_soundPath.section("/",1,1);
+//        qDebug()<<"m_soundName===================== :"+m_soundName;
+        QString soundN=m_soundPath.section("/",1,1)+"/"+m_soundName+".mp3";
+
+        QDirIterator it(dirPath,QDir::Dirs|QDir::NoDotAndDotDot, QDirIterator::Subdirectories);
+        while (it.hasNext()) {
+              qDebug()<< it.filePath();
+
+            if(QFile::exists(it.filePath()+"/"+soundN)){
+                qDebug()<<"exists" << it.filePath()+"/"+soundN;
+                bool mbesmala=false;
+                //سيضيف البسملة و الاية
+                if (m_aya==1&&m_sura!=9&&m_sura!=1&&m_reciteBasmala==true){
+                    mbesmala=true;
+                }
+
+                mPlayer->play(QUrl::fromLocalFile(it.filePath()+"/"+soundN),mbesmala);
+                return true;
+            }
+
+           it.next();
+
+
+        }
+
+/*
     QStringList filters(m_soundPath.section("/",1,1)+"*");//فلترة الاية حسب الاسم ولا تهم اللاحقة
+
     QStringList list=dir.entryList(filters,QDir::AllEntries|QDir::NoDotAndDotDot,QDir::Name);
+
     if (list.count()==0){
         qDebug()<<"2-media no exist :"+dirPath+"/.../"+m_soundPath+"/"+m_soundName+".mp3";;
         return false;
@@ -2044,6 +2072,8 @@ bool MainWindow::mediaPlayAyat(QString dirPath)
             return true;
         }
     }
+
+    */
     qDebug()<<"2-media no exist :"+dirPath+"/.../"+m_soundPath+"/"+m_soundName+".mp3";;
     return false;
 }
@@ -2151,7 +2181,7 @@ void MainWindow::mediaPlay()
         return;
     }else if(mediaPlayAyat("/usr/share/ayat/packages/data/")==true){
         //"/usr/shar/ayat/packages/data/"+m_receter+"1-3"+"/audio/"+m_soundPath----البحث عن الاية حسب حزم برنامج ايات
-
+qDebug()<<"mediaPlayAyat===============================================";
         return;
 
     }else if(mediaPlayInLocale(QDir::homePath()+"/.elforkane/"+m_soundPath)==true){

@@ -53,29 +53,29 @@ Database::Database()
 #if defined(Q_OS_WIN)
 
     appDir.cdUp();
-        appPath=  appDir.absolutePath()+"/share/elforkane";
+    appPath=  appDir.absolutePath()+"/share/elforkane";
 #elif defined(Q_OS_MAC)
     if (appDir.dirName() == "MacOS") {
         appDir.cdUp();
         appDir.cdUp();
         appDir.cdUp();
-            appPath=  appDir.absolutePath()+"/elforkane";
+        appPath=  appDir.absolutePath()+"/elforkane";
     }
 #else
     appDir.cdUp();
     appPath=  appDir.absolutePath()+"/share/elforkane";
-   // qDebug()<<appPath;
+    // qDebug()<<appPath;
 #endif
 
     myList=new QList<QString>;
     myListSura=new QList<int>;
-   myListSafhat=new QList<QString>;
-  // myListJozaa=new QList<QString>;
-   myListJozaa=new QList<int>;
+    myListSafhat=new QList<QString>;
+    // myListJozaa=new QList<QString>;
+    myListJozaa=new QList<int>;
     myListHizb=new QList<int>;
-      myListArbaa=new QList<QString>;
+    myListArbaa=new QList<QString>;
     //  myListAction=new  QList<QAction *>;
-  db = QSqlDatabase::addDatabase("QSQLITE");
+    db = QSqlDatabase::addDatabase("QSQLITE");
 }
 
 void Database::treeChargeSoura(QTreeWidget *view,  bool suraCharged,QComboBox *combo,QString lng,int id)
