@@ -793,7 +793,7 @@ void MainWindow::loadSetting()
     m_lng= settings.value("lng","sys").toString();
     m_textIcon=  settings.value("textIcon",false).toBool();
     m_infoDely=settings.value("infoDely",5).toInt();
-    m_selectColor=settings.value("selectColor",QColor(127,120,25)).value<QColor>();
+    m_selectColor=settings.value("selectColor",QColor("#00aaff")).value<QColor>();
 
     m_showMediaControl=settings.value("showMediaControl",false).toBool();
     m_curTranslation=settings.value("curTranslation",0).toInt();
@@ -1112,6 +1112,8 @@ void MainWindow::setCurentPos(int pos)
 
     qDebug()<<trUtf8("Sound Path")+" : " +(m_soundPath)+"/"+m_soundName;
     qDebug()<<trUtf8("Sound Url")+" : "+(m_soundUrl)+"/"+m_soundName+".mp3";
+    qDebug()<<trUtf8("Curent Media")+" : "+mPlayer->curentMedia();
+
     qDebug()<<trUtf8("Sura")+" : "+QString::number(m_sura)
            <<  trUtf8("Jozaa")+" : " +QString::number(m_jozaa)
             << trUtf8("Hizb")+" : "+QString::number(m_hizb)
@@ -2022,15 +2024,21 @@ void MainWindow::on_actionEnableAnimFull_toggled(bool arg1)
 //for ayat dir
 bool MainWindow::mediaPlayAyat(QString dirPath)
 {
-    QDir dir(dirPath);
+
 //      qDebug()<<"Ayat file path===================== :"+dirPath;
 //      qDebug()<<"m_soundPath===================== :"+m_soundPath.section("/",1,1);
 //        qDebug()<<"m_soundName===================== :"+m_soundName;
+
+    QString soundN=m_soundPath+"/"+m_soundName+".mp3";
+
+    if(m_soundPath.contains("/"))
         QString soundN=m_soundPath.section("/",1,1)+"/"+m_soundName+".mp3";
 
         QDirIterator it(dirPath,QDir::Dirs|QDir::NoDotAndDotDot, QDirIterator::Subdirectories);
+
         while (it.hasNext()) {
-              qDebug()<< it.filePath();
+
+             // qDebug()<< it.filePath();
 
             if(QFile::exists(it.filePath()+"/"+soundN)){
                 qDebug()<<"exists" << it.filePath()+"/"+soundN;
@@ -2050,6 +2058,7 @@ bool MainWindow::mediaPlayAyat(QString dirPath)
         }
 
 /*
+    QDir dir(dirPath);
     QStringList filters(m_soundPath.section("/",1,1)+"*");//فلترة الاية حسب الاسم ولا تهم اللاحقة
 
     QStringList list=dir.entryList(filters,QDir::AllEntries|QDir::NoDotAndDotDot,QDir::Name);

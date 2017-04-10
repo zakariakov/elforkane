@@ -38,6 +38,7 @@ public slots:
   void updateThumbnailToolBar();
  bool isPlaying(){return isPlay;}
     void playPause();
+    QString curentMedia(){return mediaPlayer->currentMedia().canonicalUrl().toString();}
 void clearList();
     void play(QMediaContent url,bool besmala=false);
     void pause(){mediaPlayer->pause();}
