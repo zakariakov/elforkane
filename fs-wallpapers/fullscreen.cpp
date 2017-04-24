@@ -145,7 +145,7 @@ void SceenFull::createTopPanel()
     labelInfo=new QLabel();
     labelInfo->setGeometry(0,10,w,40);
     labelInfo->setAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-    QString labStyle="QLabel {  font-family:Jameel Noori Nastaleeq; font: bold 18px;color: white;background-color: rgba(255, 255, 255, 0);border: 0px;}";
+    QString labStyle="QLabel {  font: bold 18px;color: white;background-color: rgba(255, 255, 255, 0);border: 0px;}";
     labelInfo->setStyleSheet(labStyle);
 
     sceen->addItem(panelTop);
@@ -190,7 +190,7 @@ void SceenFull::creatBotPanel()
     labelTrans->setGeometry(0,h-50,w,45);
     labelTrans->setAlignment(Qt::AlignHCenter);
     labelTrans->setWordWrap(true);
-    QString labStyle="QLabel { font: bold 14px;color:rgb(64, 64, 64);background-color: rgba(255, 255, 255, 0);border: 0px;}";
+    QString labStyle="QLabel { font: bold 14px;color:rgb(255, 255, 255);background-color: rgba(255, 255, 255, 0);border: 0px;}";
     labelTrans->setStyleSheet(labStyle);
 
     sceen->addItem(panelBot);

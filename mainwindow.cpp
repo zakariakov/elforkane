@@ -1996,6 +1996,8 @@ void MainWindow::toggleFullScreen()
 
                 mSceenFull->setGraphicSceen(ui->graphicsView);
                 mSceenFull->setAnimationEnabled(m_fullAnimEnable);
+
+                setCurentPos(m_id);
 //            }
         }
 
