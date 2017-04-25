@@ -35,7 +35,7 @@
 #include "dialogaddreciter.h"
 #include "dialogoption.h"
 #include "dialogabout.h"
-#include "dialogscript.h"
+//#include "dialogscript.h"
 #include <QTimer>
 #include <QSettings>
 #include <QTextCodec>
@@ -2286,24 +2286,24 @@ void MainWindow::runtimerScreen()
     }
 }
 
-void MainWindow::on_actionScriptDownload_triggered()
-{
-    DialogScript *dlg=new DialogScript(this);
-    QStringList listItem;
-    for(int i=0;i<comboSura->count();i++)
-    {
-        QString txt=comboSura->itemText(i);
-        QString data=comboSura->itemData(i).toString();
-        listItem<<txt+","+data;
-    }
-    dlg->setcomboItems(listItem);
-    dlg->setUrlName(m_soundUrl);
-    dlg->setPathCostum(m_soundPath);
-    if (dlg->exec() == QDialog::Accepted){
+//void MainWindow::on_actionScriptDownload_triggered()
+//{
+//    DialogScript *dlg=new DialogScript(this);
+//    QStringList listItem;
+//    for(int i=0;i<comboSura->count();i++)
+//    {
+//        QString txt=comboSura->itemText(i);
+//        QString data=comboSura->itemData(i).toString();
+//        listItem<<txt+","+data;
+//    }
+//    dlg->setcomboItems(listItem);
+//    dlg->setUrlName(m_soundUrl);
+//    dlg->setPathCostum(m_soundPath);
+//    if (dlg->exec() == QDialog::Accepted){
 
 
-    }
-}
+//    }
+//}
 
 void MainWindow::createTaskbar()
 {
@@ -2379,4 +2379,9 @@ void MainWindow::on_actionQuit_triggered()
         trayIcon->hide();
 
     this->close();
+}
+
+void MainWindow::on_actionStopMedia_triggered()
+{
+    mPlayer->stop();
 }

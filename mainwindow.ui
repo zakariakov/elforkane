@@ -92,7 +92,6 @@ color: black;
     <addaction name="actionNavigation"/>
     <addaction name="actionRepeatOption"/>
     <addaction name="actionOptions"/>
-    <addaction name="actionScriptDownload"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
@@ -193,7 +192,7 @@ color: black;
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>441</width>
+          <width>406</width>
           <height>343</height>
          </rect>
         </property>
@@ -811,11 +810,6 @@ color: black;
    </property>
    <property name="toolTip">
     <string>Memorizing</string>
-   </property>
-  </action>
-  <action name="actionScriptDownload">
-   <property name="text">
-    <string>Generate Download Script</string>
    </property>
   </action>
  </widget>

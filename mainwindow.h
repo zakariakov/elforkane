@@ -229,7 +229,7 @@ void on_actionMemoriz_triggered(bool checked);
 //void desableHifdhPage();
 
 void runtimerScreen();
-void on_actionScriptDownload_triggered();
+//void on_actionScriptDownload_triggered();
 
 
 void createTaskbar();
@@ -241,6 +241,8 @@ void updateThumbnailToolBar();
 void on_actionPlayPause_triggered();
 
 void on_actionQuit_triggered();
+
+void on_actionStopMedia_triggered();
 
 private:
     Ui::MainWindow *ui;

@@ -20,6 +20,8 @@ PlayerMultimedia::PlayerMultimedia(const QString &path,QWidget *parent) :
     mediaPlayer->setPlaylist(playlist);
     playButton = new QToolButton;
     stopButton= new QToolButton;
+    playButton->setAutoRaise(true);
+    stopButton->setAutoRaise(true);
     imageLabel=new QLabel;
     mTimer=new QTimer;
    connect(mTimer,SIGNAL(timeout()),this,SLOT(inimateStatus()));
@@ -208,7 +210,7 @@ void PlayerMultimedia::statusChanged(QMediaPlayer::MediaStatus status)
 
     case QMediaPlayer::NoMedia:
         qDebug()<<"QMediaPlayer::statusChanged"<<"NoMedia";
-         imageLabel->setPixmap(QPixmap(":/img/StalledMedia"));
+         //imageLabel->setPixmap(QPixmap(":/img/StalledMedia"));
           break;
 
     case QMediaPlayer::LoadedMedia:

@@ -72,8 +72,7 @@ win32 {
     dialogaddreciter.cpp \
     dialogoption.cpp \
     dialogabout.cpp\
-    sceenbase.cpp \
-    dialogscript.cpp
+    sceenbase.cpp
 
     HEADERS  +=   player.h\
     mainwindow.h \
@@ -81,8 +80,7 @@ win32 {
     dialogaddreciter.h \
     dialogoption.h \
     dialogabout.h\
-    sceenbase.h \
-    dialogscript.h
+    sceenbase.h
      message("qt vertion is :4 " $$QT_MAJOR_VERSION)
   }
 
@@ -98,8 +96,7 @@ win32 {
     dialogaddreciter.cpp \
     dialogoption.cpp \
     dialogabout.cpp\
-    sceenbase.cpp \
-    dialogscript.cpp
+    sceenbase.cpp
 
    HEADERS  +=   playermultimedia.h\
      mainwindow.h \
@@ -107,8 +104,7 @@ win32 {
     dialogaddreciter.h \
     dialogoption.h \
     dialogabout.h\
-    sceenbase.h \
-    dialogscript.h
+    sceenbase.h
 
   message("qt vertion is :5 " $$QT_MAJOR_VERSION)
    }
@@ -118,8 +114,7 @@ win32 {
 FORMS    += mainwindow.ui \
     dialogaddreciter.ui \
     dialogoption.ui \
-    dialogabout.ui \
-    dialogscript.ui
+    dialogabout.ui
 
 RESOURCES += \
     img.qrc

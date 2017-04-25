@@ -34,16 +34,16 @@
 #include<QToolButton>
 #include<QDebug>
 #include<QTextEdit>
-
+#include<QComboBox>
 
 DialogAddReciter::DialogAddReciter(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DialogAddReciter)
 {
     ui->setupUi(this);
-     mProcess=new QProcess;
-connect(mProcess,SIGNAL(readyReadStandardOutput()),this,SLOT(readStandardOutput()));
-connect(mProcess,SIGNAL(readyReadStandardError()),this,SLOT(readStandardError()));
+    mProcess=new QProcess;
+    connect(mProcess,SIGNAL(readyReadStandardOutput()),this,SLOT(readStandardOutput()));
+    connect(mProcess,SIGNAL(readyReadStandardError()),this,SLOT(readStandardError()));
 
     ui->comboBoxRiwayat->addItem(trUtf8("Default hafs"),("default"));
     ui->comboBoxRiwayat->addItem(trUtf8("Riwayat hafs"),("hafs"));
@@ -69,7 +69,7 @@ void DialogAddReciter::on_toolButtonFileName_clicked()
 
 void DialogAddReciter::on_buttonBox_clicked(QAbstractButton *button)
 {
-     mProcess->close();
+    mProcess->close();
     if(ui->buttonBox->standardButton(button)==QDialogButtonBox::Ok){
         if(ui->lineEditReciterName->text().isEmpty())
             return;
@@ -133,20 +133,16 @@ QString DialogAddReciter::getDataName()
 //TODO FIX this
 void DialogAddReciter::on_toolButtonDownLoad_toggled(bool checked)
 {
-     mProcess->close();
+    mProcess->close();
     ui->stackedWidget->setCurrentIndex(checked);
 }
 
-void DialogAddReciter::on_pushButtonStart_clicked()
-{
-    ui->stackedWidget->setCurrentIndex(2);
-    startDownload();
-}
+
 
 void DialogAddReciter::on_pushButtonStop_clicked()
 {
     mProcess->close();
-   ui->stackedWidget->setCurrentIndex(1);
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 void DialogAddReciter::on_toolButtonSeectAll_clicked(bool checked)
@@ -173,7 +169,7 @@ void DialogAddReciter::setListItems( QStringList list)
         QString txt=line.section(",",0,0);
         QString data=line.section(",",1);
         QListWidgetItem *item=new QListWidgetItem(ui->listWidget);
-        item->setText(line);
+        item->setText(txt);
         item->setData(Qt::UserRole,data);
         item->setCheckState(Qt::Unchecked);
 
@@ -181,82 +177,137 @@ void DialogAddReciter::setListItems( QStringList list)
 
 }
 
-void DialogAddReciter::startDownload()
+bool DialogAddReciter::creatListDownload()
 {
     QString url=ui->lineEditUrl->text();
-     QString reciter = url.section('/', -1);
-listDownload.clear();
-     for (int i = 0; i < ui->listWidget->count(); ++i) {
+    QString reciter = url.section('/', -1);
+    listDownload.clear();
+    for (int i = 0; i < ui->listWidget->count(); ++i) {
         QListWidgetItem *item=ui->listWidget->item(i);
         if(item->checkState()==Qt::Checked){
             int surat=i+1;
 
 
-              QString sura="000"+QString::number(surat);
-              QString txt=item->data(Qt::UserRole).toString();
-               int max=txt.section(",",1,1).toInt();
+            QString sura="000"+QString::number(surat);
+            QString txt=item->data(Qt::UserRole).toString();
+            int max=txt.section(",",1,1).toInt();
 
 
-            ui->textEditOut->insertPlainText(item->text()+ "=============================\n");
+            //            ui->textEditOut->insertPlainText(item->text()+ "=============================\n");
+
             downloadSora( sura, max);
+            listDownload<<"echo \"done :"+item->text()+"\" \n";
+
         }
 
     }
 
-        QFile fileReciter(QDir::homePath()+"/.elforkane/out");
-         if (!fileReciter.open(QFile::WriteOnly)){
-               return ;
-           }
-         QTextStream out(&fileReciter);
-         out<<"#!/bin/sh \n";
-         foreach (QString txt, listDownload) {
-            out<<txt;
-         }
-
-
-         qApp->processEvents();
-         QDir dir;
-         QString dirPath=ui->lineEditFileName->text();
-
-         if(dirPath.startsWith("audio/"))
-             dirPath=QDir::homePath()+"/.elforkane/"+ui->lineEditFileName->text();
-
-         if(!QFile::exists(dirPath))
-            dir.mkpath(dirPath) ;
-
-
-         mProcess->setWorkingDirectory(dirPath);
-
-         dir.setCurrent(dirPath);
-         mProcess->start("/bin/sh  "+ fileReciter.fileName());
-
+    return true;
 
 }
 
 void DialogAddReciter::downloadSora(QString sura,int max)
 {
-      QString url=ui->lineEditUrl->text();
+
+    QString prog =ui->comboBox->currentText();
+
+    QString url=ui->lineEditUrl->text();
     for (int i = 0; i < max; ++i) {
         QString aya="000"+QString::number(i+1);
         QString  soundName=sura.right(3)+aya.right(3) ;
 
         listDownload<<"echo \"downloading :=========================="+soundName+".mp3\" \n";
-            listDownload<<"wget -c  "+url+"/"+soundName+".mp3 \n";
-//        ui->textEditOut->insertPlainText( "wget -c  "+url+"/"+soundName+".mp3 \n");
+        listDownload <<prog +" "+url+"/"+soundName+".mp3 \n";
+        //        ui->textEditOut->insertPlainText( "wget -c  "+url+"/"+soundName+".mp3 \n");
 
     }
+
+
 }
 void DialogAddReciter::readStandardOutput()
 {
     ui->textEditOut->insertPlainText(mProcess->readAllStandardOutput());
     QTextCursor cursor( ui->textEditOut->document());
     cursor.movePosition(QTextCursor::End);
-ui->textEditOut->setTextCursor(cursor);
+    ui->textEditOut->setTextCursor(cursor);
 }
 void DialogAddReciter::readStandardError()
 {
-//    ui->textEditOut->insertPlainText(mProcess->readAllStandardError());
-//    QTextCursor cursor( ui->textEditOut->document());
-//    cursor.movePosition(QTextCursor::End);
-//    ui->textEditOut->setTextCursor(cursor);
+    ui->textEditOut->insertPlainText(mProcess->readAllStandardError());
+    QTextCursor cursor( ui->textEditOut->document());
+    cursor.movePosition(QTextCursor::End);
+    ui->textEditOut->setTextCursor(cursor);
+}
+
+void DialogAddReciter::on_pushButtonSaveScript_clicked()
+{
+    QString dirPath=ui->lineEditFileName->text();
+
+    if(dirPath.startsWith("audio/"))
+        dirPath=QDir::homePath()+"/.elforkane/"+ui->lineEditFileName->text();
+
+    QDir dir;
+    if(!QFile::exists(dirPath))
+        dir.mkpath(dirPath) ;
+
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"),
+                                                    dirPath+"/download-sh",
+                                                    "*");
+
+    qDebug()<<fileName;
+    if(fileName.isEmpty())
+        return;
+
+    if(creatListDownload()){
+
+        qApp->processEvents();
+
+        QFile fileReciter(fileName);
+        if (!fileReciter.open(QFile::WriteOnly)){
+            return ;
+        }
+        QTextStream out(&fileReciter);
+        out<<"#!/bin/sh \n";
+        foreach (QString txt, listDownload) {
+            out<<txt;
+        }
+
+    }
+}
+
+void DialogAddReciter::on_pushButtonStart_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+    if(creatListDownload()){
+
+        qApp->processEvents();
+
+        QFile fileReciter(QDir::homePath()+"/.elforkane/out");
+        if (!fileReciter.open(QFile::WriteOnly)){
+            return ;
+        }
+        QTextStream out(&fileReciter);
+        out<<"#!/bin/sh \n";
+        foreach (QString txt, listDownload) {
+            out<<txt;
+        }
+
+
+        qApp->processEvents();
+        QDir dir;
+        QString dirPath=ui->lineEditFileName->text();
+
+        if(dirPath.startsWith("audio/"))
+            dirPath=QDir::homePath()+"/.elforkane/"+ui->lineEditFileName->text();
+
+        if(!QFile::exists(dirPath))
+            dir.mkpath(dirPath) ;
+
+
+        mProcess->setWorkingDirectory(dirPath);
+        dir.setCurrent(dirPath);
+        mProcess->start("/bin/sh  "+ fileReciter.fileName());
+
+    }
+
 }

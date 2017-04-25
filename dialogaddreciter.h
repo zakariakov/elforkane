@@ -69,12 +69,14 @@ void on_toolButtonFileName_clicked();
 
     void on_toolButtonSeectAll_clicked(bool checked);
 
-    void startDownload();
+    bool creatListDownload();
 
     void downloadSora(QString sura,int max);
 
     void readStandardOutput();
      void readStandardError();
+     void on_pushButtonSaveScript_clicked();
+
 private:
     Ui::DialogAddReciter *ui;
     QString dirName;

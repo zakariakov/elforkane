@@ -78,57 +78,55 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogabout.ui" line="97"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Ubuntu&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;أتقدم بجزيل الشكر لاعضاء موقع القرءان الكريم بجامعة الملك سعود&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://quran.ksu.edu.su/&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; text-decoration: underline; color:#0057ae;&quot;&gt;http://quran.ksu.edu.su&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:12pt;&quot;&gt;و أعضاء مجتمع لينكس العربي   &lt;/span&gt;&lt;a href=&quot;www.linuxac.org&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; text-decoration: underline; color:#0057ae;&quot;&gt;www.linuxac.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;واخص بالذكر منهم محمد شعبان على تعاونه الكبير &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;و البكري على الايقونة الجميلة للبرنامج&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:12pt;&quot;&gt;وأعضاء مجتمع كيوتي العربي  &lt;/span&gt;&lt;a href=&quot;www.qt-ar.org&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; text-decoration: underline; color:#0057ae;&quot;&gt;www.qt-ar.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;وكل من ساهم او شارك او ابدى رئيا او نقدا  لاخراج هذا البرنامج&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../dialogabout.ui" line="132"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Ubuntu&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Naskh Arabic&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt; font-weight:600;&quot;&gt;كيفية الحصول على ملفات القرءان الكريم باصوات المقرئين&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Arial, sans-serif&apos;; font-size:11pt; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;اذا كان لك اتصال بالانترنيت ذو سرعة مناسبة فيمكنك الاستماع مباشرة الى المقرئ الذي تختاره كما يمكنك تغيير موقع القراءة اذا كان لك موقع تعرفه يعتمد على الصيغة التي يعمل بها البرنامج وهي ملف صوت لكل اية &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;كما يمكنك تحميل ملفات الاصوات من موقع القرءان الكريم بجامعة الملك سعود&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://quran.ksu.edu.sa/ayat/?l=ar&amp;amp;pg=patches&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; text-decoration: underline; color:#0057ae;&quot;&gt;http://quran.ksu.edu.sa/ayat/?l=ar&amp;amp;pg=patches&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;ستحصل على ملفات من نوع زيب ذات امتداد &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;;&quot;&gt;&amp;quot;.ayt&amp;quot;&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;غير الامتداد الى &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;;&quot;&gt;&amp;quot;zip&amp;quot; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;ثم ازل الضغط عن الملف ستجد بداخل المجلد المتحصل عليه مجلدا باسم المقرئ و ونوعية الضغط بداخله ملفات الصوت ضعه اين تشاء على جهازك او في قرص مضغوط او في فلاش &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;ثم في تحرير المقرئ في مسار المجلد اشر الى المجلد الذي يحتوي الاصوات&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;ملاحظة&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;يمكن ان يحتوي الملف الذي تحصلت عليه بعد ازالة الضغط على مجلدين احدهما فارغ قم بحذفه&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;كلما حملت ملفا جديدا لنفس المقرئ اضف ملفاته الى المجلد السابق الذي يحتوي ملفات المقرئ الصوتية&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;- كما يمكنك الحصول على حزم بصيغة توزيعتك من هنا&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;حزم rpm  :  &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/rpm/ayat/download/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1a5f9f;&quot;&gt;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/rpm/ayat/download/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;حزم deb :&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/deb/ayat/download/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1a5f9f;&quot;&gt;ftp://ftp.jaist.ac.jp/pub/sourceforge/a/ay/ayat/deb/ayat/download/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;ملاحظة : اذا لم تجد المقرئ ضمن قائمة المقرئين يمكنك اضافته يدويا &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;مثلا &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;اسم المقرئ  : الحذيفي&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;مسار الملف : audio/Hudhaify_32kbps&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:11pt;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;اذا كان لك اتصال بالانترنيت ذو سرعة مناسبة فيمكنك الاستماع مباشرة الى المقرئ الذي تختاره كما يمكنك تغيير موقع القراءة اذا كان لك موقع تعرفه يعتمد على الصيغة التي يعمل بها البرنامج وهي ملف صوت لكل اية &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:11pt; font-weight:600; color:#ff0000;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:11pt;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;كما يمكنك تحميل ملفات الاصوات من موقع القرءان الكريم بجامعة الملك سعود&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://quran.ksu.edu.sa/ayat/?l=ar&amp;amp;pg=patches&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt; text-decoration: underline; color:#0057ae;&quot;&gt;http://quran.ksu.edu.sa/ayat/?l=ar&amp;amp;pg=patches&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;ستحصل على ملفات من نوع زيب ذات امتداد &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:11pt;&quot;&gt;&amp;quot;.ayt&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;غير الامتداد الى &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:11pt;&quot;&gt;&amp;quot;zip&amp;quot; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;ثم ازل الضغط عن الملف ستجد بداخل المجلد المتحصل عليه مجلدا باسم المقرئ و ونوعية الضغط بداخله ملفات الصوت ضعه اين تشاء على جهازك او في قرص مضغوط او في فلاش &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;ثم في تحرير المقرئ في مسار المجلد اشر الى المجلد الذي يحتوي الاصوات&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;ملاحظة&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:11pt;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;يمكن ان يحتوي الملف الذي تحصلت عليه بعد ازالة الضغط على مجلدين احدهما فارغ قم بحذفه&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;كلما حملت ملفا جديدا لنفس المقرئ اضف ملفاته الى المجلد السابق الذي يحتوي ملفات المقرئ الصوتية&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt; font-weight:600; color:#ff0000;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;- كما يمكنك الحصول على حزم بصيغة توزيعتك من هنا&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;حزم rpm  و deb :  &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://ayat.sourceforge.net/telawa_ar.php&quot;&gt;&lt;span style=&quot; font-size:11pt; text-decoration: underline; color:#007af4;&quot;&gt;http://ayat.sourceforge.net/telawa_ar.php&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;ملاحظة : اذا لم تجد المقرئ ضمن قائمة المقرئين يمكنك اضافته يدويا &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;مثلا &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;اسم المقرئ  : الحذيفي&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;مسار الملف : audio/Hudhaify_32kbps&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../dialogabout.ui" line="88"/>
         <source>&amp;Thinks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../dialogabout.ui" line="97"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Naskh Arabic&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt;&quot;&gt;أتقدم بجزيل الشكر لاعضاء موقع القرءان الكريم بجامعة الملك سعود&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://quran.ksu.edu.su/&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:9pt; text-decoration: underline; color:#0057ae;&quot;&gt;http://quran.ksu.edu.su&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:12pt;&quot;&gt;و أعضاء مجتمع لينكس العربي   &lt;/span&gt;&lt;a href=&quot;www.linuxac.org&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0057ae;&quot;&gt;www.linuxac.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Ubuntu&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt;&quot;&gt;واخص بالذكر منهم محمد شعبان على تعاونه الكبير &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt;&quot;&gt;و البكري على الايقونة الجميلة للبرنامج&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:12pt;&quot;&gt;وأعضاء مجتمع كيوتي العربي  &lt;/span&gt;&lt;a href=&quot;www.qt-ar.org&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt; text-decoration: underline; color:#0057ae;&quot;&gt;www.qt-ar.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Ubuntu&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt;&quot;&gt;وكل من ساهم او شارك او ابدى رئيا او نقدا  لاخراج هذا البرنامج&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -170,22 +168,47 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogaddreciter.ui" line="113"/>
+        <location filename="../../../../dialogaddreciter.ui" line="114"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;ملاحظة&lt;/span&gt;: &lt;span style=&quot; color:#0c0c0c;&quot;&gt;يستحسن ان بكون اسم القارئ مثل اسمه في عنوان الموقع مثلا &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; color:#0c0c0c;&quot;&gt;  &amp;quot;Muhammad_Ayyoub_128kbps &amp;quot; &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; color:#0c0c0c;&quot;&gt;حتى يمكن للبرنامج ايجاده في حالة ما نزلت حزم التثبيت&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../dialogaddreciter.ui" line="127"/>
         <source>Select all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogaddreciter.ui" line="141"/>
+        <location filename="../../../../dialogaddreciter.ui" line="159"/>
+        <source>Select programme:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../dialogaddreciter.ui" line="170"/>
+        <source>curl  -O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../dialogaddreciter.ui" line="175"/>
+        <source>wget -c</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../dialogaddreciter.ui" line="190"/>
+        <source>Save script to file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../dialogaddreciter.ui" line="210"/>
         <source>Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogaddreciter.ui" line="172"/>
+        <location filename="../../../../dialogaddreciter.ui" line="245"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogaddreciter.ui" line="187"/>
+        <location filename="../../../../dialogaddreciter.ui" line="260"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
@@ -222,6 +245,11 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../../dialogaddreciter.cpp" line="62"/>
         <source>Open Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../dialogaddreciter.cpp" line="253"/>
+        <source>Save File</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -460,109 +488,46 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="102"/>
+        <location filename="../../../../dialogoption.cpp" line="103"/>
         <source>The language for this application has been changed.The change will take effect the next time the application is started.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="109"/>
+        <location filename="../../../../dialogoption.cpp" line="110"/>
         <source>Select Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="121"/>
+        <location filename="../../../../dialogoption.cpp" line="122"/>
         <source>default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="53"/>
-        <location filename="../../../../dialogoption.cpp" line="131"/>
+        <location filename="../../../../dialogoption.cpp" line="54"/>
+        <location filename="../../../../dialogoption.cpp" line="132"/>
         <source>system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="54"/>
+        <location filename="../../../../dialogoption.cpp" line="55"/>
         <source>Arabic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="55"/>
+        <location filename="../../../../dialogoption.cpp" line="56"/>
         <source>Arabic India</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="439"/>
+        <location filename="../../../../dialogoption.cpp" line="440"/>
         <source>Open Directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../dialogoption.cpp" line="452"/>
-        <location filename="../../../../dialogoption.cpp" line="459"/>
-        <location filename="../../../../dialogoption.cpp" line="502"/>
+        <location filename="../../../../dialogoption.cpp" line="453"/>
+        <location filename="../../../../dialogoption.cpp" line="460"/>
+        <location filename="../../../../dialogoption.cpp" line="503"/>
         <source>The change will take effect the next time the application is started.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>DialogScript</name>
-    <message>
-        <location filename="../../../../dialogscript.ui" line="14"/>
-        <source>Generate Download Script</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../dialogscript.ui" line="22"/>
-        <source>Url :</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../dialogscript.ui" line="37"/>
-        <source>Generate for  no exists medias</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../dialogscript.ui" line="47"/>
-        <source>From :</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../dialogscript.ui" line="61"/>
-        <source>To :</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Dialogfullsceen</name>
-    <message>
-        <location filename="../../../../fs-wallpapers/dialogfullsceen.ui" line="14"/>
-        <source>options</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../fs-wallpapers/dialogfullsceen.ui" line="20"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Ubuntu&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;سمة ملء الشاشة &lt;/p&gt;
-&lt;p align=&quot;center&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;بتأثير تغير الخلفية مع كل آية&lt;/p&gt;
-&lt;p align=&quot;center&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;تأليف أبو زكريا&lt;/p&gt;
-&lt;p align=&quot;center&quot; dir=&apos;rtl&apos; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;النسخة 1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../fs-wallpapers/dialogfullsceen.ui" line="49"/>
-        <source>Images folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../fs-wallpapers/dialogfullsceen.ui" line="59"/>
-        <source>...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../fs-wallpapers/dialogfullsceen.cpp" line="29"/>
-        <source>Open Directory</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -579,666 +544,666 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="101"/>
+        <location filename="../../../../mainwindow.ui" line="100"/>
         <source>&amp;Edit</source>
         <oldsource>&amp;edit</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="117"/>
+        <location filename="../../../../mainwindow.ui" line="116"/>
         <source>View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="121"/>
+        <location filename="../../../../mainwindow.ui" line="120"/>
         <source>Text Zoom</source>
         <oldsource>textZoom</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="618"/>
-        <location filename="../../../../mainwindow.ui" line="621"/>
+        <location filename="../../../../mainwindow.ui" line="617"/>
+        <location filename="../../../../mainwindow.ui" line="620"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="398"/>
-        <location filename="../../../../mainwindow.ui" line="708"/>
+        <location filename="../../../../mainwindow.ui" line="397"/>
+        <location filename="../../../../mainwindow.ui" line="707"/>
         <source>Navigation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="359"/>
-        <location filename="../../../../mainwindow.ui" line="420"/>
-        <location filename="../../../../mainwindow.cpp" line="381"/>
-        <location filename="../../../../mainwindow.cpp" line="1110"/>
+        <location filename="../../../../mainwindow.ui" line="358"/>
+        <location filename="../../../../mainwindow.ui" line="419"/>
+        <location filename="../../../../mainwindow.cpp" line="386"/>
+        <location filename="../../../../mainwindow.cpp" line="1117"/>
         <source>Sura</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="425"/>
+        <location filename="../../../../mainwindow.ui" line="424"/>
         <source>Ajzaa And Arbaa</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="290"/>
-        <location filename="../../../../mainwindow.ui" line="438"/>
-        <location filename="../../../../mainwindow.ui" line="448"/>
+        <location filename="../../../../mainwindow.ui" line="289"/>
+        <location filename="../../../../mainwindow.ui" line="437"/>
+        <location filename="../../../../mainwindow.ui" line="447"/>
         <source>...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="137"/>
+        <location filename="../../../../mainwindow.ui" line="136"/>
         <source>Translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="132"/>
+        <location filename="../../../../mainwindow.ui" line="131"/>
         <source>Tefsir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="128"/>
-        <location filename="../../../../mainwindow.cpp" line="319"/>
+        <location filename="../../../../mainwindow.ui" line="127"/>
+        <location filename="../../../../mainwindow.cpp" line="324"/>
         <source>Translation and Tefsir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="153"/>
+        <location filename="../../../../mainwindow.ui" line="152"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="496"/>
+        <location filename="../../../../mainwindow.ui" line="495"/>
         <source>tool Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="167"/>
+        <location filename="../../../../mainwindow.ui" line="166"/>
         <source>Navigation and Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="205"/>
+        <location filename="../../../../mainwindow.ui" line="204"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="345"/>
+        <location filename="../../../../mainwindow.ui" line="344"/>
         <source>Begin Aya</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="519"/>
+        <location filename="../../../../mainwindow.ui" line="518"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="528"/>
+        <location filename="../../../../mainwindow.ui" line="527"/>
         <source>NextPage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="543"/>
+        <location filename="../../../../mainwindow.ui" line="542"/>
         <source>Previous Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="558"/>
+        <location filename="../../../../mainwindow.ui" line="557"/>
         <source>Next Sura</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="594"/>
+        <location filename="../../../../mainwindow.ui" line="593"/>
         <source>Alt+Left</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="573"/>
+        <location filename="../../../../mainwindow.ui" line="572"/>
         <source>Previous Sura</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="609"/>
+        <location filename="../../../../mainwindow.ui" line="608"/>
         <source>Alt+Right</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="588"/>
+        <location filename="../../../../mainwindow.ui" line="587"/>
         <source>Next Aya</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="603"/>
+        <location filename="../../../../mainwindow.ui" line="602"/>
         <source>Previous Aya</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="636"/>
+        <location filename="../../../../mainwindow.ui" line="635"/>
         <source>F11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="711"/>
+        <location filename="../../../../mainwindow.ui" line="710"/>
         <source>Navigation Ctrl+F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="714"/>
+        <location filename="../../../../mainwindow.ui" line="713"/>
         <source>Ctrl+F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="787"/>
+        <location filename="../../../../mainwindow.ui" line="786"/>
         <source>Quran text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="624"/>
+        <location filename="../../../../mainwindow.ui" line="623"/>
         <source>Ctrl+L</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="471"/>
+        <location filename="../../../../mainwindow.ui" line="470"/>
         <source>text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="476"/>
+        <location filename="../../../../mainwindow.ui" line="475"/>
         <source>pos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="261"/>
+        <location filename="../../../../mainwindow.ui" line="260"/>
         <source>And</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="274"/>
+        <location filename="../../../../mainwindow.ui" line="273"/>
         <source>Or</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="335"/>
+        <location filename="../../../../mainwindow.ui" line="334"/>
         <source>Text all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="321"/>
+        <location filename="../../../../mainwindow.ui" line="320"/>
         <source>Multi Search</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="328"/>
+        <location filename="../../../../mainwindow.ui" line="327"/>
         <source>End Aya</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="369"/>
+        <location filename="../../../../mainwindow.ui" line="368"/>
         <source>Aya text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="374"/>
+        <location filename="../../../../mainwindow.ui" line="373"/>
         <source>id</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="531"/>
+        <location filename="../../../../mainwindow.ui" line="530"/>
         <source>NextPage Alt+PgDown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="534"/>
+        <location filename="../../../../mainwindow.ui" line="533"/>
         <source>Alt+PgDown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="546"/>
+        <location filename="../../../../mainwindow.ui" line="545"/>
         <source>Previous Page Alt+PgUp</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="549"/>
+        <location filename="../../../../mainwindow.ui" line="548"/>
         <source>Alt+PgUp</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="561"/>
+        <location filename="../../../../mainwindow.ui" line="560"/>
         <source>Next Sura Alt+Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="564"/>
+        <location filename="../../../../mainwindow.ui" line="563"/>
         <source>Alt+Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="576"/>
+        <location filename="../../../../mainwindow.ui" line="575"/>
         <source>Previous Sura Alt+Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="579"/>
+        <location filename="../../../../mainwindow.ui" line="578"/>
         <source>Alt+Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="591"/>
+        <location filename="../../../../mainwindow.ui" line="590"/>
         <source>Next Aya Alt+Left</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="606"/>
+        <location filename="../../../../mainwindow.ui" line="605"/>
         <source>Previous Aya  Alt+Right</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="633"/>
+        <location filename="../../../../mainwindow.ui" line="632"/>
         <source>Full Screen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="810"/>
-        <location filename="../../../../mainwindow.ui" line="813"/>
+        <location filename="../../../../mainwindow.ui" line="809"/>
+        <location filename="../../../../mainwindow.ui" line="812"/>
         <source>Memorizing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="645"/>
+        <location filename="../../../../mainwindow.ui" line="644"/>
         <source>Play Pause</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="460"/>
+        <location filename="../../../../mainwindow.ui" line="459"/>
         <source>Ignore hamza</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="648"/>
+        <location filename="../../../../mainwindow.ui" line="647"/>
         <source>Play Pause Espace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="651"/>
+        <location filename="../../../../mainwindow.ui" line="650"/>
         <source>Space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="660"/>
+        <location filename="../../../../mainwindow.ui" line="659"/>
         <source> Media Stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="663"/>
+        <location filename="../../../../mainwindow.ui" line="662"/>
         <source>Media Stop S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="666"/>
+        <location filename="../../../../mainwindow.ui" line="665"/>
         <source>S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="675"/>
+        <location filename="../../../../mainwindow.ui" line="674"/>
         <source>Zoom Out</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="678"/>
+        <location filename="../../../../mainwindow.ui" line="677"/>
         <source>Zoom Out Ctrl+-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="681"/>
+        <location filename="../../../../mainwindow.ui" line="680"/>
         <source>Ctrl+-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="690"/>
+        <location filename="../../../../mainwindow.ui" line="689"/>
         <source>Zoom In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="693"/>
+        <location filename="../../../../mainwindow.ui" line="692"/>
         <source>Zoom In Ctrl++</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="696"/>
+        <location filename="../../../../mainwindow.ui" line="695"/>
         <source>Ctrl++</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="726"/>
+        <location filename="../../../../mainwindow.ui" line="725"/>
         <source>Ctrl+R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="735"/>
-        <location filename="../../../../mainwindow.ui" line="738"/>
-        <location filename="../../../../mainwindow.cpp" line="1607"/>
+        <location filename="../../../../mainwindow.ui" line="734"/>
+        <location filename="../../../../mainwindow.ui" line="737"/>
+        <location filename="../../../../mainwindow.cpp" line="1614"/>
         <source>Add Receter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="747"/>
-        <location filename="../../../../mainwindow.ui" line="750"/>
+        <location filename="../../../../mainwindow.ui" line="746"/>
+        <location filename="../../../../mainwindow.ui" line="749"/>
         <source>Remove Receter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="759"/>
+        <location filename="../../../../mainwindow.ui" line="758"/>
         <source>Edit curent Receter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="762"/>
+        <location filename="../../../../mainwindow.ui" line="761"/>
         <source>Edite Curent Receter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="771"/>
+        <location filename="../../../../mainwindow.ui" line="770"/>
         <source>Rceter Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="774"/>
+        <location filename="../../../../mainwindow.ui" line="773"/>
         <source>Edit receters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="779"/>
+        <location filename="../../../../mainwindow.ui" line="778"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="782"/>
+        <location filename="../../../../mainwindow.ui" line="781"/>
         <source>F1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="795"/>
+        <location filename="../../../../mainwindow.ui" line="794"/>
         <source>Enable Animation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="798"/>
+        <location filename="../../../../mainwindow.ui" line="797"/>
         <source>Ctrl+Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="818"/>
-        <source>Generate Download Script</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../mainwindow.cpp" line="79"/>
+        <location filename="../../../../mainwindow.cpp" line="84"/>
         <source>ltr</source>
         <comment>layou direction for this language ex:rtl for arabic</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="217"/>
-        <location filename="../../../../mainwindow.cpp" line="758"/>
-        <location filename="../../../../mainwindow.cpp" line="764"/>
-        <location filename="../../../../mainwindow.cpp" line="1886"/>
+        <location filename="../../../../mainwindow.cpp" line="222"/>
+        <location filename="../../../../mainwindow.cpp" line="763"/>
+        <location filename="../../../../mainwindow.cpp" line="769"/>
+        <location filename="../../../../mainwindow.cpp" line="1893"/>
         <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="285"/>
-        <location filename="../../../../mainwindow.cpp" line="376"/>
-        <location filename="../../../../mainwindow.cpp" line="1114"/>
+        <location filename="../../../../mainwindow.cpp" line="290"/>
+        <location filename="../../../../mainwindow.cpp" line="381"/>
+        <location filename="../../../../mainwindow.cpp" line="1121"/>
         <source>Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="364"/>
-        <location filename="../../../../mainwindow.cpp" line="294"/>
-        <location filename="../../../../mainwindow.cpp" line="386"/>
-        <location filename="../../../../mainwindow.cpp" line="1115"/>
-        <source>Aya</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
+        <location filename="../../../../mainwindow.ui" line="363"/>
         <location filename="../../../../mainwindow.cpp" line="299"/>
         <location filename="../../../../mainwindow.cpp" line="391"/>
-        <location filename="../../../../mainwindow.cpp" line="1111"/>
-        <source>Jozaa</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../mainwindow.cpp" line="284"/>
-        <location filename="../../../../mainwindow.cpp" line="1099"/>
-        <source>P : </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../mainwindow.cpp" line="293"/>
-        <source>A : </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../mainwindow.cpp" line="298"/>
-        <source>J : </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../mainwindow.cpp" line="303"/>
-        <source>H : </source>
+        <location filename="../../../../mainwindow.cpp" line="1122"/>
+        <source>Aya</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../mainwindow.cpp" line="304"/>
         <location filename="../../../../mainwindow.cpp" line="396"/>
-        <location filename="../../../../mainwindow.cpp" line="1112"/>
+        <location filename="../../../../mainwindow.cpp" line="1118"/>
+        <source>Jozaa</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../mainwindow.cpp" line="289"/>
+        <location filename="../../../../mainwindow.cpp" line="1104"/>
+        <source>P : </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../mainwindow.cpp" line="298"/>
+        <source>A : </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../mainwindow.cpp" line="303"/>
+        <source>J : </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../mainwindow.cpp" line="308"/>
+        <source>H : </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../mainwindow.cpp" line="309"/>
+        <location filename="../../../../mainwindow.cpp" line="401"/>
+        <location filename="../../../../mainwindow.cpp" line="1119"/>
         <source>Hizb</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="355"/>
+        <location filename="../../../../mainwindow.cpp" line="360"/>
         <source>menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="401"/>
+        <location filename="../../../../mainwindow.cpp" line="406"/>
         <source>Reciter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="405"/>
+        <location filename="../../../../mainwindow.cpp" line="410"/>
         <source>&amp;zoomIn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="406"/>
+        <location filename="../../../../mainwindow.cpp" line="411"/>
         <source>&amp;zoomOut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="606"/>
+        <location filename="../../../../mainwindow.cpp" line="611"/>
         <source>getInteger</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="613"/>
+        <location filename="../../../../mainwindow.cpp" line="618"/>
         <source>get page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="620"/>
+        <location filename="../../../../mainwindow.cpp" line="625"/>
         <source>get Aya</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="627"/>
+        <location filename="../../../../mainwindow.cpp" line="632"/>
         <source>get Jozaa</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="634"/>
+        <location filename="../../../../mainwindow.cpp" line="639"/>
         <source>get Hizb</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="639"/>
+        <location filename="../../../../mainwindow.cpp" line="644"/>
         <source>enter Value:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="670"/>
+        <location filename="../../../../mainwindow.cpp" line="675"/>
         <source>get sura</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="671"/>
+        <location filename="../../../../mainwindow.cpp" line="676"/>
         <source>shoose sura</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="681"/>
+        <location filename="../../../../mainwindow.cpp" line="686"/>
         <source>get Reciter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="918"/>
+        <location filename="../../../../mainwindow.cpp" line="923"/>
         <source>&amp;Minimize</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="919"/>
+        <location filename="../../../../mainwindow.cpp" line="924"/>
         <source>&amp;Restore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="922"/>
+        <location filename="../../../../mainwindow.cpp" line="927"/>
         <source>&amp;Show info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="985"/>
+        <location filename="../../../../mainwindow.cpp" line="990"/>
         <source>Sura :</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="985"/>
+        <location filename="../../../../mainwindow.cpp" line="990"/>
         <source> Aya :</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="986"/>
+        <location filename="../../../../mainwindow.cpp" line="991"/>
         <source> Hizb :</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1101"/>
+        <location filename="../../../../mainwindow.cpp" line="1106"/>
         <source>A : </source>
         <comment>aya</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1102"/>
+        <location filename="../../../../mainwindow.cpp" line="1107"/>
         <source>J : </source>
         <comment>jozaa</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1103"/>
+        <location filename="../../../../mainwindow.cpp" line="1108"/>
         <source>H : </source>
         <comment>hizb</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1108"/>
+        <location filename="../../../../mainwindow.cpp" line="1113"/>
         <source>Sound Path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1109"/>
+        <location filename="../../../../mainwindow.cpp" line="1114"/>
         <source>Sound Url</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1113"/>
+        <location filename="../../../../mainwindow.cpp" line="1115"/>
+        <source>Curent Media</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../mainwindow.cpp" line="1120"/>
         <source>Robaa</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1163"/>
-        <location filename="../../../../mainwindow.cpp" line="1238"/>
-        <location filename="../../../../mainwindow.cpp" line="1567"/>
+        <location filename="../../../../mainwindow.cpp" line="1170"/>
+        <location filename="../../../../mainwindow.cpp" line="1245"/>
+        <location filename="../../../../mainwindow.cpp" line="1574"/>
         <source>Sura : </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1164"/>
-        <location filename="../../../../mainwindow.cpp" line="1239"/>
-        <location filename="../../../../mainwindow.cpp" line="1568"/>
+        <location filename="../../../../mainwindow.cpp" line="1171"/>
+        <location filename="../../../../mainwindow.cpp" line="1246"/>
+        <location filename="../../../../mainwindow.cpp" line="1575"/>
         <source>   Jozaa : </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1165"/>
-        <location filename="../../../../mainwindow.cpp" line="1240"/>
-        <location filename="../../../../mainwindow.cpp" line="1569"/>
+        <location filename="../../../../mainwindow.cpp" line="1172"/>
+        <location filename="../../../../mainwindow.cpp" line="1247"/>
+        <location filename="../../../../mainwindow.cpp" line="1576"/>
         <source>   Hizb : </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1166"/>
-        <location filename="../../../../mainwindow.cpp" line="1241"/>
-        <location filename="../../../../mainwindow.cpp" line="1570"/>
+        <location filename="../../../../mainwindow.cpp" line="1173"/>
+        <location filename="../../../../mainwindow.cpp" line="1248"/>
+        <location filename="../../../../mainwindow.cpp" line="1577"/>
         <source>   Robaa : </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1167"/>
-        <location filename="../../../../mainwindow.cpp" line="1242"/>
-        <location filename="../../../../mainwindow.cpp" line="1571"/>
+        <location filename="../../../../mainwindow.cpp" line="1174"/>
+        <location filename="../../../../mainwindow.cpp" line="1249"/>
+        <location filename="../../../../mainwindow.cpp" line="1578"/>
         <source>   Aya : </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1168"/>
-        <location filename="../../../../mainwindow.cpp" line="1243"/>
-        <location filename="../../../../mainwindow.cpp" line="1572"/>
+        <location filename="../../../../mainwindow.cpp" line="1175"/>
+        <location filename="../../../../mainwindow.cpp" line="1250"/>
+        <location filename="../../../../mainwindow.cpp" line="1579"/>
         <source>     El Chiekh : </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1534"/>
+        <location filename="../../../../mainwindow.cpp" line="1541"/>
         <source>Quran txt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="409"/>
+        <location filename="../../../../mainwindow.cpp" line="414"/>
         <source>&amp;Hide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="682"/>
+        <location filename="../../../../mainwindow.cpp" line="687"/>
         <source>shoose Reciter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1442"/>
+        <location filename="../../../../mainwindow.cpp" line="1449"/>
         <source>General Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.ui" line="723"/>
-        <location filename="../../../../mainwindow.cpp" line="1447"/>
+        <location filename="../../../../mainwindow.ui" line="722"/>
+        <location filename="../../../../mainwindow.cpp" line="1454"/>
         <source>Repeat Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1619"/>
+        <location filename="../../../../mainwindow.cpp" line="1626"/>
         <source>Edit Receter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../mainwindow.cpp" line="1663"/>
+        <location filename="../../../../mainwindow.cpp" line="1670"/>
         <source>Do you want to delete %1 ?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1246,7 +1211,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../../../main.cpp" line="135"/>
+        <location filename="../../../../main.cpp" line="139"/>
         <source>elforkane The electronic Holly Quran browser Version : %1 
 Usage: elforkane [options]
 Options:
