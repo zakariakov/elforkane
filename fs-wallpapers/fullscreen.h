@@ -10,7 +10,7 @@
      Q_OBJECT
 
  public:
-     SceenFull();
+     SceenFull(int w,int h);
      ~SceenFull();
 
  public slots:
@@ -59,6 +59,8 @@
      QString m_fullbackgroundDir;
      QList<QString> listBgr;
      int curListIndexOf;
+     int m_Width;
+     int m_Height;
  };
 
 #endif // SCEENTEST_H

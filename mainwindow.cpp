@@ -1945,10 +1945,9 @@ void MainWindow::lineEditSearchTree_textChanged(const QString &arg1)
 
 void MainWindow::toggleFullScreen()
 {
-//    if(m_fullIndex<0||m_fullIndex>myListSceen.count()-1)
-//        m_fullAnimated=false;
 
     if(this->isFullScreen()){
+
         timerScreen->stop();
         ui->toolBar->setVisible(m_standardTool);
         ui->menuBar->setVisible(m_showMenu);
@@ -1958,47 +1957,46 @@ void MainWindow::toggleFullScreen()
         ui->graphicsView->setScene(sceenbase);
         ui->graphicsView->setSceneRect(QRectF(0.0,0.0,912.0,672.0));
         ui->graphicsView->updateSceneRect(QRectF(0.0,0.0,912.0,672.0));
-        //        if(myListSceen.count()>0)
-        //        sceenFullInterface->setAnimationEnabled(false);
 
+        if (mSceenFull){
+            delete  mSceenFull;
+            mSceenFull=0;
+        }
 
     }else{
         oldCurPos=this->cursor().pos().x();
 
-
         timerScreen->start(30000);
-        int w=QApplication::desktop()->geometry().width();
-        int h=QApplication::desktop()->geometry().height();
- ui->menuBar->setVisible(false);
-        if(m_fullAnimated==false){
 
-            ui->graphicsView->setSceneRect(QRectF(0.0,0.0,912.0,672.0));
-            ui->graphicsView->updateSceneRect(QRectF(0.0,0.0,912.0,672.0));
-            ui->graphicsView->setScene(sceenbase);
-            this->showFullScreen();
+        int w=QApplication::desktop()->screenGeometry(this).width();
+        int h=QApplication::desktop()->screenGeometry(this).height();
+        ui->menuBar->setVisible(false);
 
-        }else  {
+        if(m_fullAnimated){
+
             ui->toolBar->setVisible(false);
 
             this->showFullScreen();
             ui->graphicsView->setSceneRect(QRectF(0.0,0.0,w,h));
             ui->graphicsView->updateSceneRect(QRectF(0.0,0.0,w,h));
-            //     ui->graphicsView->setScene(scenfull);
             ui->graphicsView->setContextMenuPolicy(Qt::CustomContextMenu);
-            //     scenfull->setBackgroundDir(m_fullScreenBgr);
             setCurentPos(m_id);
-//            if(myListSceen.count()>0){
-               if (!mSceenFull)
-                  mSceenFull=new SceenFull;
-//                sceenFullInterface->setGraphicSceen(ui->graphicsView);
 
-//                sceenFullInterface->setAnimationEnabled(m_fullAnimEnable);
+            if (!mSceenFull)
+                mSceenFull=new SceenFull(w,h);
 
-                mSceenFull->setGraphicSceen(ui->graphicsView);
-                mSceenFull->setAnimationEnabled(m_fullAnimEnable);
+            mSceenFull->setGraphicSceen(ui->graphicsView);
+            mSceenFull->setAnimationEnabled(m_fullAnimEnable);
 
-                setCurentPos(m_id);
-//            }
+            setCurentPos(m_id);
+
+
+        }else  {
+
+            ui->graphicsView->setSceneRect(QRectF(0.0,0.0,912.0,672.0));
+            ui->graphicsView->updateSceneRect(QRectF(0.0,0.0,912.0,672.0));
+            ui->graphicsView->setScene(sceenbase);
+            this->showFullScreen();
         }
 
     }

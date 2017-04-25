@@ -9,10 +9,11 @@
 #include <QDebug>
 #include <QSettings>
 
-SceenFull::SceenFull()
+SceenFull::SceenFull(int w, int h):m_Width(w),m_Height(h)
 {
     this->setObjectName(trUtf8("wallpapers-fullscreen"));
     QDir appDir(qApp->applicationDirPath());
+
 
 #if defined(Q_OS_WIN)
 
@@ -33,7 +34,6 @@ SceenFull::SceenFull()
 #endif
     loadSetting();
 
-
     sceen=new QGraphicsScene;
     createSceen();
     //   setBackground();
@@ -49,6 +49,10 @@ SceenFull::~SceenFull()
 void SceenFull::setGraphicSceen(QGraphicsView *view)
 {
     view->setScene(sceen);
+    int s1=( QApplication::desktop()->screenGeometry(0).width());
+    int s2=( QApplication::desktop()->screenGeometry(1).width());
+     int s3=( QApplication::desktop()->screenGeometry(QPoint(0,0)).width());
+qDebug()<<"screen"<<s1<<s2<<s3;
     setBackgroundDir();
 }
 
@@ -108,26 +112,29 @@ void SceenFull::createBlurAya()
     itemBlurAya->setPos(50,2);
     itemBlurTop->setPos(50,45);
 }
+
 void SceenFull::createTopPanel()
 {
-    int w=QApplication::desktop()->geometry().width();
+
+   // int w= QApplication::desktop()->screenGeometry(0).width();
+
 
     QGraphicsWidget  * panelTop=new QGraphicsWidget ;
     QGraphicsPixmapItem   *itemPanelTop= new   QGraphicsPixmapItem (panelTop);
     itemBlurTop=new QGraphicsWidget (panelTop);
-    QPixmap pix(w,90);
+    QPixmap pix(m_Width,90);
     pix.fill(Qt::transparent);
     QPainter p;
     p.begin(&pix);
 
-    p.fillRect(0,0,w,60,QColor(255, 255, 255, 100));
+    p.fillRect(0,0,m_Width,60,QColor(255, 255, 255, 100));
     //      p.setPen(QColor(128, 128, 128,200));
     //      p.drawLine(0,59,pix.width(),59);
     //      p.setPen(QColor(255, 255, 255,150));
     //      p.drawLine(0,58,pix.width(),58);
     //رسم زخارف في الاعلى
     QPixmap pixBot(":/image/bot.png");
-    int n=(w/64)+1;
+    int n=(m_Width/64)+1;
     for(int i=0;i<n;i++){
         int x=(64*i);
         p.drawPixmap(x,50,pixBot);
@@ -143,7 +150,7 @@ void SceenFull::createTopPanel()
     panelTop->setGraphicsEffect(efet);
 
     labelInfo=new QLabel();
-    labelInfo->setGeometry(0,10,w,40);
+    labelInfo->setGeometry(0,10,m_Width,40);
     labelInfo->setAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
     QString labStyle="QLabel {  font: bold 18px;color: white;background-color: rgba(255, 255, 255, 0);border: 0px;}";
     labelInfo->setStyleSheet(labStyle);
@@ -153,16 +160,16 @@ void SceenFull::createTopPanel()
 }
 void SceenFull::creatBotPanel()
 {
-    int w=QApplication::desktop()->geometry().width();
-    int h=QApplication::desktop()->geometry().height();
+//    int w= QApplication::desktop()->screenGeometry(0).width();
+//    int h= QApplication::desktop()->screenGeometry(0).height();
     QGraphicsWidget  * panelBot=new QGraphicsWidget ;
     QGraphicsPixmapItem   *itemPanelBot= new   QGraphicsPixmapItem (panelBot);
-    QPixmap pix(w,90);
+    QPixmap pix(m_Width,90);
     pix.fill(Qt::transparent);
     QPainter p;
     p.begin(&pix);
 
-    p.fillRect(0,30,w,60,QColor(255, 255, 255, 100));
+    p.fillRect(0,30,m_Width,60,QColor(255, 255, 255, 100));
     //      p.setPen(QColor(128, 128, 128,150));
     //      p.drawLine(0,0,pix.width(),0);
 
@@ -170,7 +177,7 @@ void SceenFull::creatBotPanel()
     //      p.drawLine(0,1,pix.width(),1);
 
     QPixmap pixtop(":/image/top.png");
-    int n=(w/64)+1;
+    int n=(m_Width/64)+1;
     for(int i=0;i<n;i++){
         int x=(64*i);
         p.drawPixmap(x,0,pixtop);
@@ -185,9 +192,9 @@ void SceenFull::creatBotPanel()
     efet->setBlurRadius(10);
     panelBot->setGraphicsEffect(efet);
 
-    panelBot->setPos(0,h-90);
+    panelBot->setPos(0,m_Height-90);
     labelTrans=new QLabel;
-    labelTrans->setGeometry(0,h-50,w,45);
+    labelTrans->setGeometry(0,m_Height-50,m_Width,45);
     labelTrans->setAlignment(Qt::AlignHCenter);
     labelTrans->setWordWrap(true);
     QString labStyle="QLabel { font: bold 14px;color:rgb(255, 255, 255);background-color: rgba(255, 255, 255, 0);border: 0px;}";
@@ -313,8 +320,10 @@ void  SceenFull::setPixmapAya(QPixmap pix)
     p.end();
 
     itemAya->setPixmap(pixmap);
-    int w=QApplication::desktop()->geometry().width()/2;
-    int h=(QApplication::desktop()->geometry().height())/2;
+   // int w= QApplication::desktop()->screenGeometry(0).width()/2;
+   // int h=( QApplication::desktop()->screenGeometry(0).height())/2;
+    int w=m_Width/2;
+    int h=m_Height/2;
     int pw=(pix.width()+100)/2;
     int ph=(pix.height()+100)/2;
     panelAya->setGeometry(w-pw,h-ph,pix.width()+100,pix.height()+100);
@@ -334,7 +343,7 @@ void  SceenFull::setPixmapAya(QPixmap pix)
 void SceenFull::setBackgroundDir()
 {
     /*
-    int w=QApplication::desktop()->geometry().width();
+    int w= QApplication::desktop()->screenGeometry(this).width();
     int h=QApplication::desktop()->geometry().height();
       QPixmap pix(w,h);
 
@@ -372,19 +381,19 @@ void SceenFull::setBackgroundDir()
 }
 void  SceenFull::setBackground()
 {
-    int w=QApplication::desktop()->geometry().width();
-    int h=QApplication::desktop()->geometry().height();
+//    int w= QApplication::desktop()->screenGeometry(0).width();
+//    int h= QApplication::desktop()->screenGeometry(0).height();
 
     panelBgr->setOpacity(0);
     QString curBgr;
     if(listBgr.count()>0)
         curBgr=   listBgr.at(curListIndexOf);
 
-    QPixmap pix(w,h);
+    QPixmap pix(m_Width,m_Height);
     pix.fill(Qt::transparent);
     QPainter p;
     p.begin(&pix);
-    p.drawPixmap(0,0,w,h,QPixmap(curBgr));
+    p.drawPixmap(0,0,m_Width,m_Height,QPixmap(curBgr));
     p.end();
 
     pixBgr->setPixmap(pix);
@@ -400,13 +409,16 @@ void  SceenFull::setBackgroundBack()
 
     // qDebug()<<curBgr;
     //qDebug()<<"listcounted"+QString::number(listBgr.count());
-    int w=QApplication::desktop()->geometry().width();
-    int h=QApplication::desktop()->geometry().height();
-    QPixmap pix(w,h);
+//    int w= QApplication::desktop()->screenGeometry(0).width();
+//    int h= QApplication::desktop()->screenGeometry(0).height();
+
+
+
+    QPixmap pix(m_Width,m_Height);
     pix.fill(Qt::transparent);
     QPainter p;
     p.begin(&pix);
-    p.drawPixmap(0,0,w,h,QPixmap(curBgr));
+    p.drawPixmap(0,0,m_Width,m_Height,QPixmap(curBgr));
     p.end();
     pixBgrBack->setPixmap(pix);
     int i=listBgr.count()-1;
@@ -430,15 +442,15 @@ void  SceenFull::animZekhrafaRing()
 
 
 
-    int h=(QApplication::desktop()->geometry().height());
-    int w=(QApplication::desktop()->geometry().width());
-    //الزخرفة الدائرية على الجهة السفلى
+//    int h=( QApplication::desktop()->screenGeometry(0).height());
+//    int w=( QApplication::desktop()->screenGeometry(0).width());
+   //الزخرفة الدائرية على الجهة السفلى
     QPixmap pix(":/image/ringBot.png");
     QGraphicsPixmapItem *zekhrafa=new QGraphicsPixmapItem(zekhrafaRondedBot);
     zekhrafa->setPixmap(pix);
 
     int ph=pix.height()/2;
-    zekhrafaRondedBot->setPos(-ph,h-ph);
+    zekhrafaRondedBot->setPos(-ph,m_Height-ph);
     zekhrafaRondedBot->setOpacity(0.70);
     zekhrafaRondedBot->setTransformOriginPoint(ph,ph);
     QPropertyAnimation  *anim1 = new QPropertyAnimation(zekhrafaRondedBot, "rotation");
@@ -453,7 +465,7 @@ void  SceenFull::animZekhrafaRing()
 
     int ph2=pix2.height()/2;
     int pw=pix2.width()/2;
-    zekhrafaRondedTop->setPos(w-pw,-ph2);
+    zekhrafaRondedTop->setPos(m_Width-pw,-ph2);
     zekhrafaRondedTop->setOpacity(0.70);
     zekhrafaRondedTop->setTransformOriginPoint(QPointF(ph2,pw));
     QPropertyAnimation *anim2 = new QPropertyAnimation(zekhrafaRondedTop, "rotation");
@@ -464,7 +476,7 @@ void  SceenFull::animZekhrafaRing()
     QPropertyAnimation *anim3 = new QPropertyAnimation(itemBlurTop, "pos");
     anim3->setEasingCurve(QEasingCurve::CosineCurve);
     anim3->setDuration(20000);
-    anim3->setStartValue(QPoint(w-50,45));
+    anim3->setStartValue(QPoint(m_Width-50,45));
     anim3->setEndValue(QPoint(50,45));
     //anim3->start();
 

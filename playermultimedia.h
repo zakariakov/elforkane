@@ -4,7 +4,9 @@
 #include <QWidget>
 #include <QMediaPlayer>
 #include <QToolButton>
+#include <QLabel>
 #include <QSlider>
+#include <QTimer>
 //#include <QtWinExtras>
 //QT_FORWARD_DECLARE_CLASS(QLabel)
 //QT_FORWARD_DECLARE_CLASS(QSlider)
@@ -42,7 +44,7 @@ public slots:
 void clearList();
     void play(QMediaContent url,bool besmala=false);
     void pause(){mediaPlayer->pause();}
-    void stop(){isPlay=false;mediaPlayer->stop();}
+    void stop();
     void repeate(){mediaPlayer->setPosition(0); mediaPlayer->play();}
     void setPlayPauseShortcut(QKeySequence shortcut){playButton->setShortcut(shortcut);}
 private slots:
@@ -53,12 +55,15 @@ private slots:
     void handleError();
 void statusChanged(QMediaPlayer::MediaStatus status);
 void playlistPositionChanged(int);
-
+void inimateStatus();
 private:
     QMediaPlayer *mediaPlayer;
     QToolButton *playButton;
+    QToolButton *stopButton;
+    QLabel *imageLabel;
     QSlider *positionSlider;
-
+QTimer *mTimer;
+int mCurImage;
     bool isPlay;
     QString m_appPath;
     bool playOne;

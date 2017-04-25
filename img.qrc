@@ -55,5 +55,13 @@
         <file>image/top_left.png</file>
         <file>image/top_right.png</file>
         <file>image/top.png</file>
+        <file>img/StalledMedia.png</file>
+        <file>img/BufferedMedia.png</file>
+        <file>img/load-01.png</file>
+        <file>img/load-02.png</file>
+        <file>img/load-03.png</file>
+        <file>img/load-04.png</file>
+        <file>img/load-05.png</file>
+        <file>img/load-06.png</file>
     </qresource>
 </RCC>
