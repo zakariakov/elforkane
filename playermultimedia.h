@@ -34,7 +34,7 @@ public:
 //    QWinThumbnailToolButton *backwardToolButton;
 
 signals:
-     void finished();
+     void mediFinished();
      void invalidMedia();
 public slots:
   void updateThumbnailToolBar();
@@ -71,7 +71,7 @@ int mCurImage;
     QMediaPlaylist *playlist;
 
 
-
+bool m_isvalid;
 
 };
 

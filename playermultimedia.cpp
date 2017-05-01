@@ -198,8 +198,8 @@ void PlayerMultimedia::handleError()
 void PlayerMultimedia::statusChanged(QMediaPlayer::MediaStatus status)
 {
 
-    bool isvalid=true;
-    bool finoshed=false;
+     m_isvalid=true;
+    bool finished=false;
     // handle status message
     mTimer->stop();
     switch (status) {
@@ -240,12 +240,12 @@ void PlayerMultimedia::statusChanged(QMediaPlayer::MediaStatus status)
         break;
 
     case QMediaPlayer::EndOfMedia:
-        finoshed=true;
+        finished=true;
 
         break;
 
     case QMediaPlayer::InvalidMedia:
-        isvalid=true;
+        m_isvalid=false;
         qDebug()<<"QMediaPlayer::statusChanged"<<"InvalidMedia";
          imageLabel->setPixmap(QPixmap(":/img/StalledMedia"));
         mediaPlayer->stop();
@@ -254,12 +254,13 @@ void PlayerMultimedia::statusChanged(QMediaPlayer::MediaStatus status)
         break;
     }
 
-    if(isvalid && finoshed){
+    if(m_isvalid && finished){
+
 
         if(playOne)
             playOne=false;
         else
-            emit finished();
+            emit mediFinished();
     }
 
 
@@ -275,9 +276,10 @@ void PlayerMultimedia::playlistPositionChanged(int)
         ////        mediaPlayer->pause();
         return;
     }
-
-    //    if(playlist->currentIndex()==-1)
-    //        emit finished();
+//#if QT_VERSION <= QT_VERSION_CHECK(5,6,0)
+        if(playlist->currentIndex()==-1 && m_isvalid)
+            emit mediFinished();
+//#endif
 }
 
 void PlayerMultimedia::createTaskbar()

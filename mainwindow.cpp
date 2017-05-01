@@ -155,7 +155,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(timerScreen, SIGNAL(timeout()), this, SLOT(runtimerScreen()));
     connect(sceenbase, SIGNAL(setPos(int)), this, SLOT(setCurentPos(int)));
     sceenbase->updatePages();
-    connect(mPlayer,SIGNAL(finished()),this,SLOT(mediaFinished()));
+    connect(mPlayer,SIGNAL(mediFinished()),this,SLOT(mediaFinished()));
 
     //    QWinJumpList jumplist;
     //    jumplist.recent()->setVisible(true);

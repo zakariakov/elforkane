@@ -177,13 +177,6 @@ DISTFILES += \
     usr/share/elforkane/language/elforkane_en.qm \
     usr/share/elforkane/language/elforkane_fr.qm \
     usr/share/elforkane/tafasir/ar_muyassar.db \
-    usr/share/elforkane/tafasir/baghawy.db \
-    usr/share/elforkane/tafasir/katheer.db \
-    usr/share/elforkane/tafasir/qortoby.db \
-    usr/share/elforkane/tafasir/sa3dy.db \
-    usr/share/elforkane/tafasir/tabary.db \
-    usr/share/elforkane/tafasir/tafheem.db \
-    usr/share/elforkane/translat/ar_muyassar.db \
     usr/share/elforkane/translat/en_sahih.db \
     usr/share/elforkane/translat/fr_hamidullah.db \
     usr/share/elforkane/quran.db \
