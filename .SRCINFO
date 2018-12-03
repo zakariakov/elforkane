@@ -1,0 +1,17 @@
+pkgbase = elforkane
+	pkgver = 1.2
+	pkgrel = 1
+	arch = x86_64
+	license = GPL
+	depends = qt5-multimedia
+	depends = qt5-gstreamer
+	optdepends = ffmppeg
+	optdepends = gst-plugins-good
+	optdepends = gst-plugins-bad
+	optdepends = gst-plugins-ugly
+	optdepends = gst-libav
+	source = https://github.com/zakariakov/elforkane/archive/1.2.tar.gz
+	md5sums = SKIP
+
+pkgname = elforkane
+
