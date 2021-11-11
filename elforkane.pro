@@ -123,6 +123,7 @@ RESOURCES += \
 TRANSLATIONS    =usr/share/elforkane/language/elforkane_ar.ts\
 usr/share/elforkane/language/elforkane_fr.ts\
 usr/share/elforkane/language/elforkane_en.ts
+usr/share/elforkane/language/elforkane_id.ts
 CODECFORTR = UTF-8
 
 
@@ -857,4 +858,5 @@ DISTFILES += \
     usr/share/elforkane/language/elforkane_ar.ts \
     usr/share/elforkane/language/elforkane_en.ts \
     usr/share/elforkane/language/elforkane_fr.ts \
+     usr/share/elforkane/language/elforkane_id.ts \
     README.md
