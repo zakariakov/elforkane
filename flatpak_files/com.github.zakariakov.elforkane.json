@@ -1,0 +1,87 @@
+{
+  "app-id": "com.github.zakariakov.elforkane",
+  "default-branch": "stable",
+  "runtime": "org.kde.Platform",
+  "runtime-version": "5.15-21.08",
+  "sdk": "org.kde.Sdk",
+  "command": "elforkane",
+  "rename-desktop-file": "elforkane.desktop",
+  "rename-icon": "elforkane",
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=wayland",
+    "--share=network",
+    "--device=dri",
+    "--socket=pulseaudio",
+    "--filesystem=home",
+    "--talk-name=org.kde.StatusNotifierWatcher",
+    "--talk-name=com.canonical.indicator.application"
+  ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/lib/cmake",
+    "/lib/mkspecs",
+    "/share/aclocal",
+    "/share/pkgconfig",
+    "/share/info",
+    "/share/man",
+    "/cmake",
+    "*.a",
+    "*.la",
+    "*.cmake",
+    "*.prl"
+  ],
+  "modules": [
+         {
+         "name": "ffmpeg",
+         "config-opts": [
+             "--enable-gpl",
+             "--enable-shared",
+             "--disable-static",
+             "--enable-gnutls",
+             "--disable-doc",
+             "--disable-programs",
+             "--disable-devices",
+             "--enable-libopus",
+             "--enable-libvpx",
+             "--enable-libvorbis"
+         ],
+         "cleanup": [
+             "/share/ffmpeg",
+             "/include"
+         ],
+         "sources": [
+             {
+                 "type": "archive",
+                 "url": "https://www.ffmpeg.org/releases/ffmpeg-4.3.2.tar.xz",
+                 "sha256": "46e4e64f1dd0233cbc0934b9f1c0da676008cad34725113fb7f802cfa84ccddb"
+             }
+         ]
+     },
+    {
+      "name": "elforkane",
+      "buildsystem": "simple",
+      "sources": [
+	{
+	  "type": "git",
+	  "url": "https://github.com/zakariakov/elforkane"
+	},
+        {
+          "type": "file",
+          "path": "com.github.zakariakov.elforkane.metainfo.xml"
+        }
+      ],
+      "build-commands" : [
+	        "qmake elforkane_flatpak.pro",
+	        "make",
+	        "make DESTDIR=/app install"
+      ],
+       "post-install": [
+           "mkdir -p /app/share/metainfo",
+           "cp  com.github.zakariakov.elforkane.metainfo.xml  /app/share/metainfo"        ]
+    }
+  ]
+}
+
