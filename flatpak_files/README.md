@@ -1,4 +1,6 @@
-# To Install From Bundle
+# To Install From Bundle (Change runtime Platform Version To Current Version In com.github.zakariakov.elforkane.json File).
+
+''' flatpak --user install org.kde.Platform//5.15-21.08  ''' 
 
 ''' wget https://raw.githubusercontent.com/zakariakov/elforkane/master/flatpak_files/com.github.zakariakov.elforkane.flatpak '''
 
